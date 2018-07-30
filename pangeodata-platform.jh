@@ -1,0 +1,845 @@
+
+entity Transaction {
+    id String,
+
+    general_information String,
+
+    addesses String,
+
+    status String,
+
+    statusDisplay String,
+
+    editable String,
+
+    editMode String,
+
+    active String,
+
+    cost String,
+
+    referenceId String,
+
+    user String,
+
+    company String,
+
+    createdAt String,
+
+    statusNr String,
+
+    redirectUrl String,
+
+    consentForm String,
+
+    localConsentForm String,
+
+    valid String,
+
+    updatedAt String,
+
+    orders String,
+
+
+
+
+
+
+
+
+}
+
+entity GeneralInformation {
+    firstName String,
+
+    middleName String,
+
+    lastName String,
+
+    maidenName String,
+
+    title String,
+
+    birthDate String,
+
+    id String,
+
+    referenceId String,
+
+
+}
+
+entity Address {
+    current String,
+
+    startDate String,
+
+    country String,
+
+    endDate String,
+
+    town String,
+
+    address1 String,
+
+    address2 String,
+
+    postalCode String,
+
+    province String,
+}
+
+entity Country {
+    id String,
+
+    name String,
+
+    code String,
+
+    localCheck String,
+}
+
+enum TransactionStatus {
+    SUBMITTED,
+    COMPLETED,
+    PARTIAL
+}
+
+enum EditMode {
+    EDIT,
+    CONTINUE
+}
+
+entity Order {
+    id String,
+
+    files String,
+
+    reqInputs String,
+
+    reqFormInputs String,
+
+    product String,
+
+    transaction String,
+
+    user String,
+
+    status String,
+
+    rejectReason String,
+
+    company String,
+
+    partner String,
+
+    country String,
+
+    createdAt String,
+
+    updatedAt String,
+
+    expectedDate String,
+
+    dayTillComplete String,
+
+    cost String,
+
+    turnAroundTime String,
+
+    report String,
+
+    refereneceId String,
+
+    cancellationReason String,
+
+    clientId String,
+
+    active String,
+
+    selected String,
+
+    applicationId String,
+
+    applicationServiceIds String,
+
+    iCoverReport String,
+}
+
+entity User {
+    id String,
+
+    firstname String,
+
+    lastname String,
+
+    username String,
+
+    email String,
+
+    role String,
+
+    company String,
+
+    name String,
+
+    surname String,
+
+    password String,
+
+    active String,
+
+    createdAt String,
+
+    updatedAt String,
+
+    isTokenLogin String,
+
+    orderId String,
+
+}
+
+entity Company {
+    id String,
+
+    name String,
+
+    countries Country[],
+
+    role String,
+
+    user String,
+
+    createdAt String,
+
+    updatedAt String,
+
+    active String,
+
+    automated String,
+
+}
+
+enum CompanyRole {
+    PARTNER,
+    CLIENT
+}
+
+enum UserRole {
+    CLIENT,
+    PARTNER,
+    ADMIN,
+    SUPERADMIN
+}
+
+entity OrderFile {
+    name String,
+
+    localFiles String,
+
+    files String,
+
+    id String,
+
+    links String,
+
+    displayLinks String,
+
+    iCoverName String,
+
+    orderId String,
+
+}
+
+entity OrderInput {
+    name String,
+
+    id String,
+
+    orderId String,
+
+    label String,
+
+    input String,
+
+    iCoverName String,
+
+
+
+}
+
+entity OrderForm {
+    formType String,
+
+    input String,
+
+    valid String,
+
+    name String,
+
+
+
+
+}
+
+entity Product {
+    id String,
+
+    active String,
+
+    name String,
+
+    description String,
+
+    turnAroundTime String,
+
+    cost String,
+
+    countries String,
+
+    createdAt String,
+
+    updatedAt String,
+
+
+
+
+}
+
+enum OrderStatus {
+    PARTIAL,
+    NEW,
+    RECEIVED,
+    ADDITIONALINFONEEDED,
+    CANCELLED,
+    PENDING,
+    QUALITYCHECK,
+    COMPLETED
+}
+
+entity IOrderReport {
+
+}
+
+entity ApplicationService {
+    id String,
+
+    applicationServiceId String,
+
+    orderId String,
+
+
+}
+
+entity File {
+    id String,
+
+    url String,
+
+    orderFileId String,
+
+
+}
+
+entity Link {
+    id String,
+
+    url String,
+
+    orderFileId String,
+
+
+}
+
+entity ICoverName {
+    id String,
+
+    name String,
+
+    orderFileId String,
+
+
+}
+
+entity ICoverName {
+    id String,
+
+    name String,
+
+    orderInputId String,
+
+
+}
+
+enum FormType {
+    EDUCATION,
+    EMPLOYMENT,
+    LICENSE
+}
+
+entity IOrderForm {
+
+}
+
+entity OrderEmploymentForm {
+    employerName String,
+
+    managerName String,
+
+    endingPay String,
+
+    rehireEligibility String,
+
+    institutionLocalName String,
+
+    sourceWebsite String,
+
+    sourcePhone String,
+
+    sourceEmail String,
+
+    present String,
+
+    employmentStartDate String,
+
+    employmentEndDate String,
+
+    endingPosition String,
+
+    startingPosition String,
+
+    startingPay String,
+
+    street String,
+
+    postalCode String,
+
+    reasonForLeaving String,
+
+    notes String,
+
+}
+
+entity OrderEducationForm {
+    typeDiploma String,
+
+    nameOfInstitution String,
+
+    institutionLocalName String,
+
+    subject String,
+
+    performance String,
+
+    typeOfInstitution String,
+
+    sourceWebsite String,
+
+    sourceName String,
+
+    sourcePhone String,
+
+    sourceEmail String,
+
+    present String,
+
+    attendanceStartDate String,
+
+    attendanceEndDate String,
+
+    diplomaAwardDate String,
+
+    studentRegistrationNo String,
+
+    town String,
+
+    state String,
+
+    country String,
+
+    postalCode String,
+
+    notes String,
+
+}
+
+entity OrderProfessionalLicenseForm {
+    nameOfLicense String,
+
+    town String,
+
+    licenseInstitution String,
+
+}
+
+entity ProductCountry {
+    id String,
+
+    turnAroundTime String,
+
+    country String,
+
+    cost String,
+
+
+
+}
+
+entity CriminalRecordReport {
+    recordFound String,
+
+    offences String,
+
+    verifiedBy String,
+
+    verifiedDate String,
+
+
+}
+
+entity EducationReport {
+    degreeVerified String,
+
+    institutionVerified String,
+
+    attendanceStartDateVerified String,
+
+    attendanceEndDate String,
+
+    attendanceEndDateVerified String,
+
+    degreeEarned String,
+
+    majorVerified String,
+
+    graduationDateVerified String,
+
+    educationPersonContactName String,
+
+    educationDesignationContact String,
+
+    educationVerifiedDate String,
+
+    educationRemarks String,
+
+
+}
+
+entity EmploymentReport {
+    employerVerified String,
+
+    employmentStartDateVerified String,
+
+    employmentEndDateVerified String,
+
+    titleVerified String,
+
+    slaryVerified String,
+
+    reasonForTermination String,
+
+    employmentPersonContactName String,
+
+    employmentDesignationContact String,
+
+    employmentVerifiedDate String,
+
+    employmentRehireEligibility String,
+
+    employmentRehireExplanation String,
+
+    employmentRemarks String,
+
+}
+
+entity AddressCheckReport {
+    addressVerified String,
+
+    idAuthVerifiedBy String,
+
+    addressVerifiedBy String,
+
+    addressVerifiedDate String,
+
+    addressRemarks String,
+
+}
+
+entity BankruptcyCheckReport {
+    bankruptcyFindings String,
+
+    bankruptcyVerifiedBy String,
+
+    bankruptcyVerifiedDate String,
+
+    bankruptcyRemarks String,
+
+}
+
+entity CivilLitigationCheckReport {
+    civilRecordFound String,
+
+    civilFindings String,
+
+    civilVerifiedBy String,
+
+    civilVerifiedDate String,
+
+    civilRemarks String,
+
+}
+
+entity CreditCheckReport {
+    creditFindings String,
+
+    creditVerifiedBy String,
+
+    creditVerifiedDate String,
+
+    creditRemarks String,
+
+}
+
+entity DirectorshipVerificationReport {
+    directorshipVerified String,
+
+    directorshipFindings String,
+
+    directorshipVerifiedBy String,
+
+    directorshipVerifiedDate String,
+
+}
+
+entity DriversLicenseCheckReport {
+    driversLicenseVerified String,
+
+    driversLicenseNumber String,
+
+    driversLicenseStatus String,
+
+    driverLicenseVerifiedBy String,
+
+    driversLicenseVerifiedDate String,
+
+    driversLicenseRemarks String,
+
+}
+
+entity IdentityCheckReport {
+    idVerified String,
+
+    idAuthVerifiedBy String,
+
+    idVerifiedDate String,
+
+    idRemarks String,
+
+}
+
+entity LicenseCheckReport {
+    licenseVerified String,
+
+    licRegistrationNumber String,
+
+    licenseStatus String,
+
+    licVerifiedBy String,
+
+    licVerifiedDate String,
+
+    licRemarks String,
+
+}
+
+entity LocalLanguageMediaCheckReport {
+    localLanguageMediaFindings String,
+
+    localLanguageMediaStatus String,
+
+    localLanguageMediaVerifiedDate String,
+
+}
+
+entity PassportCheckReport {
+    passportVerified String,
+
+    documentAuthenticityVerifiedBy String,
+
+    documentAuthenticityVerifiedDate String,
+
+    documentAuthenticityRemarks String,
+
+}
+
+entity PoliticallyExposedPersonsCheckReport {
+    pepIdentified String,
+
+    pepVerifiedBy String,
+
+    pepVerifiedDate String,
+
+    pepRemarks String,
+
+}
+
+entity ReferenceCheckReport {
+    nameOfReference String,
+
+    designationOfReference String,
+
+    referenceResponse String,
+
+    resVerifiedDate String,
+
+}
+
+entity ReportedCriminalActivityCheck {
+    reportedCriminalActivityRecordFound String,
+
+    reportedCriminalActivityVerifiedBy String,
+
+    reportedCriminalActivityVerifiedDate String,
+
+    reportedCriminalActivityRemarks String,
+
+}
+
+entity SocialMediaCheckReport {
+    socialMediaSourcesChecked String,
+
+    socialMediaFindings String,
+
+    socialMediaVerifiedDate String,
+
+}
+
+entity DefaultReport {
+    verifiedBy String,
+
+    findings String,
+
+    verifiedDate String,
+
+    remarks String,
+
+}
+
+entity Offence {
+    offence String,
+
+    offenceDate String,
+
+    sentence String,
+
+    verifiedBy String,
+
+    verifiedDate String,
+
+    remarks String,
+
+
+}
+
+enum DegreeVerified {
+    VERIFIED,
+    NOTVERIFIED,
+    UNABLETOVERIFY
+}
+
+entity Migration {
+    id String,
+
+    description String,
+
+    version String,
+
+}
+
+entity Requirement {
+    id String,
+
+    name String,
+
+    links String,
+
+    country String,
+
+    product String,
+
+    type String,
+
+    input String,
+
+    form String,
+
+    active String,
+
+    createdAt String,
+
+    updatedAt String,
+
+    displayOrder String,
+
+    displayDownloadLink String,
+
+    iCoverName String,
+
+}
+
+entity Link {
+    id String,
+
+    requirementId String,
+
+    url String,
+
+
+}
+
+enum RequirementType {
+    FILE,
+    INPUT,
+    FORM
+}
+
+entity ICoverName {
+    id String,
+
+    name String,
+
+    requirementId String,
+
+
+}
+
+entity Rule {
+    id String,
+
+    country String,
+
+    rule String,
+
+}
+
+entity Token {
+    createdAt String,
+
+    expiredAt String,
+
+    userId String,
+
+    token String,
+
+
+}
+
+entity Session {
+    id String,
+
+    user String,
+
+    passwordToken String,
+
+
+}
