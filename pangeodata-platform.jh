@@ -2,7 +2,7 @@
 entity Transaction {
     id String,
 
-    general_information String,
+    generalnformation String,
 
     addesses String,
 
@@ -203,8 +203,6 @@ entity Company {
     id String,
 
     name String,
-
-    countries Country[],
 
     role String,
 
