@@ -1,0 +1,26 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "orderInput" : {
+            "home": {
+                "title": "OrderInputs",
+                "createLabel": "Créer un nouveau Order Input",
+                "createOrEditLabel": "Créer ou éditer un Order Input"
+            },
+            "created": "Un nouveau Order Input a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Order Input avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Order Input avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Order Input {{ id }} ?"
+            },
+            "detail": {
+                "title": "Order Input"
+            },
+            "name": "Name",
+            "orderId": "Order Id",
+            "label": "Label",
+            "input": "Input",
+            "iCoverName": "I Cover Name"
+        }
+    }
+}

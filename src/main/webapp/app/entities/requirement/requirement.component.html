@@ -1,0 +1,78 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="pangeodataJHipsterApp.requirement.home.title">Requirements</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-requirement" [routerLink]="['/requirement/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="pangeodataJHipsterApp.requirement.home.createLabel">
+            Create new Requirement
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="requirements">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.requirement.name">Name</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.requirement.links">Links</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.requirement.country">Country</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.requirement.product">Product</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.requirement.type">Type</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.requirement.input">Input</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.requirement.form">Form</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.requirement.active">Active</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.requirement.createdAt">Created At</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.requirement.updatedAt">Updated At</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.requirement.displayOrder">Display Order</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.requirement.displayDownloadLink">Display Download Link</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.requirement.iCoverName">I Cover Name</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let requirement of requirements ;trackBy: trackId">
+                <td><a [routerLink]="['/requirement', requirement.id, 'view' ]">{{requirement.id}}</a></td>
+                <td>{{requirement.name}}</td>
+                <td>{{requirement.links}}</td>
+                <td>{{requirement.country}}</td>
+                <td>{{requirement.product}}</td>
+                <td>{{requirement.type}}</td>
+                <td>{{requirement.input}}</td>
+                <td>{{requirement.form}}</td>
+                <td>{{requirement.active}}</td>
+                <td>{{requirement.createdAt}}</td>
+                <td>{{requirement.updatedAt}}</td>
+                <td>{{requirement.displayOrder}}</td>
+                <td>{{requirement.displayDownloadLink}}</td>
+                <td>{{requirement.iCoverName}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/requirement', requirement.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/requirement', requirement.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'requirement/'+ requirement.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

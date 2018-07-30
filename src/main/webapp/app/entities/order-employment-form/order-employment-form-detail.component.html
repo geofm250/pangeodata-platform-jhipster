@@ -1,0 +1,95 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="orderEmploymentForm">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.detail.title">Order Employment Form</span> {{orderEmploymentForm.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.employerName">Employer Name</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.employerName}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.managerName">Manager Name</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.managerName}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.endingPay">Ending Pay</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.endingPay}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.rehireEligibility">Rehire Eligibility</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.rehireEligibility}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.institutionLocalName">Institution Local Name</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.institutionLocalName}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.sourceWebsite">Source Website</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.sourceWebsite}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.sourcePhone">Source Phone</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.sourcePhone}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.sourceEmail">Source Email</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.sourceEmail}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.present">Present</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.present}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.employmentStartDate">Employment Start Date</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.employmentStartDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.employmentEndDate">Employment End Date</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.employmentEndDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.endingPosition">Ending Position</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.endingPosition}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.startingPosition">Starting Position</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.startingPosition}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.startingPay">Starting Pay</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.startingPay}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.street">Street</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.street}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.postalCode">Postal Code</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.postalCode}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.reasonForLeaving">Reason For Leaving</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.reasonForLeaving}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.notes">Notes</span></dt>
+                <dd>
+                    <span>{{orderEmploymentForm.notes}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/order-employment-form', orderEmploymentForm.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

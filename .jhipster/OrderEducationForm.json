@@ -1,0 +1,95 @@
+{
+    "name": "OrderEducationForm",
+    "fields": [
+        {
+            "fieldName": "typeDiploma",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nameOfInstitution",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "institutionLocalName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "subject",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "performance",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "typeOfInstitution",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sourceWebsite",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sourceName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sourcePhone",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sourceEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "present",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "attendanceStartDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "attendanceEndDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "diplomaAwardDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "studentRegistrationNo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "town",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "state",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "country",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "postalCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "notes",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180730145636",
+    "entityTableName": "order_education_form",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

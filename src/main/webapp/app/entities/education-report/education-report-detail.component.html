@@ -1,0 +1,71 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="educationReport">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.educationReport.detail.title">Education Report</span> {{educationReport.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.educationReport.degreeVerified">Degree Verified</span></dt>
+                <dd>
+                    <span>{{educationReport.degreeVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.educationReport.institutionVerified">Institution Verified</span></dt>
+                <dd>
+                    <span>{{educationReport.institutionVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.educationReport.attendanceStartDateVerified">Attendance Start Date Verified</span></dt>
+                <dd>
+                    <span>{{educationReport.attendanceStartDateVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.educationReport.attendanceEndDate">Attendance End Date</span></dt>
+                <dd>
+                    <span>{{educationReport.attendanceEndDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.educationReport.attendanceEndDateVerified">Attendance End Date Verified</span></dt>
+                <dd>
+                    <span>{{educationReport.attendanceEndDateVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.educationReport.degreeEarned">Degree Earned</span></dt>
+                <dd>
+                    <span>{{educationReport.degreeEarned}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.educationReport.majorVerified">Major Verified</span></dt>
+                <dd>
+                    <span>{{educationReport.majorVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.educationReport.graduationDateVerified">Graduation Date Verified</span></dt>
+                <dd>
+                    <span>{{educationReport.graduationDateVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.educationReport.educationPersonContactName">Education Person Contact Name</span></dt>
+                <dd>
+                    <span>{{educationReport.educationPersonContactName}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.educationReport.educationDesignationContact">Education Designation Contact</span></dt>
+                <dd>
+                    <span>{{educationReport.educationDesignationContact}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.educationReport.educationVerifiedDate">Education Verified Date</span></dt>
+                <dd>
+                    <span>{{educationReport.educationVerifiedDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.educationReport.educationRemarks">Education Remarks</span></dt>
+                <dd>
+                    <span>{{educationReport.educationRemarks}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/education-report', educationReport.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

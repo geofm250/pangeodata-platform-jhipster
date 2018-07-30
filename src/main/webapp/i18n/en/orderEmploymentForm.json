@@ -1,0 +1,39 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "orderEmploymentForm" : {
+            "home": {
+                "title": "Order Employment Forms",
+                "createLabel": "Create a new Order Employment Form",
+                "createOrEditLabel": "Create or edit a Order Employment Form"
+            },
+            "created": "A new Order Employment Form is created with identifier {{ param }}",
+            "updated": "A Order Employment Form is updated with identifier {{ param }}",
+            "deleted": "A Order Employment Form is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Order Employment Form {{ id }}?"
+            },
+            "detail": {
+                "title": "Order Employment Form"
+            },
+            "employerName": "Employer Name",
+            "managerName": "Manager Name",
+            "endingPay": "Ending Pay",
+            "rehireEligibility": "Rehire Eligibility",
+            "institutionLocalName": "Institution Local Name",
+            "sourceWebsite": "Source Website",
+            "sourcePhone": "Source Phone",
+            "sourceEmail": "Source Email",
+            "present": "Present",
+            "employmentStartDate": "Employment Start Date",
+            "employmentEndDate": "Employment End Date",
+            "endingPosition": "Ending Position",
+            "startingPosition": "Starting Position",
+            "startingPay": "Starting Pay",
+            "street": "Street",
+            "postalCode": "Postal Code",
+            "reasonForLeaving": "Reason For Leaving",
+            "notes": "Notes"
+        }
+    }
+}

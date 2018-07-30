@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="identityCheckReport">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.identityCheckReport.detail.title">Identity Check Report</span> {{identityCheckReport.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.identityCheckReport.idVerified">Id Verified</span></dt>
+                <dd>
+                    <span>{{identityCheckReport.idVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.identityCheckReport.idAuthVerifiedBy">Id Auth Verified By</span></dt>
+                <dd>
+                    <span>{{identityCheckReport.idAuthVerifiedBy}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.identityCheckReport.idVerifiedDate">Id Verified Date</span></dt>
+                <dd>
+                    <span>{{identityCheckReport.idVerifiedDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.identityCheckReport.idRemarks">Id Remarks</span></dt>
+                <dd>
+                    <span>{{identityCheckReport.idRemarks}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/identity-check-report', identityCheckReport.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

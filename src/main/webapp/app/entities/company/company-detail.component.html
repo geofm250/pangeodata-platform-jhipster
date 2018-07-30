@@ -1,0 +1,51 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="company">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.company.detail.title">Company</span> {{company.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.company.name">Name</span></dt>
+                <dd>
+                    <span>{{company.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.company.role">Role</span></dt>
+                <dd>
+                    <span>{{company.role}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.company.user">User</span></dt>
+                <dd>
+                    <span>{{company.user}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.company.createdAt">Created At</span></dt>
+                <dd>
+                    <span>{{company.createdAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.company.updatedAt">Updated At</span></dt>
+                <dd>
+                    <span>{{company.updatedAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.company.active">Active</span></dt>
+                <dd>
+                    <span>{{company.active}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.company.automated">Automated</span></dt>
+                <dd>
+                    <span>{{company.automated}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/company', company.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

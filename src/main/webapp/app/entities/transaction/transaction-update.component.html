@@ -1,0 +1,119 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-transaction-heading" jhiTranslate="pangeodataJHipsterApp.transaction.home.createOrEditLabel">Create or edit a Transaction</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!transaction.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="transaction.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.generalnformation" for="field_generalnformation">Generalnformation</label>
+                    <input type="text" class="form-control" name="generalnformation" id="field_generalnformation"
+                        [(ngModel)]="transaction.generalnformation" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.addesses" for="field_addesses">Addesses</label>
+                    <input type="text" class="form-control" name="addesses" id="field_addesses"
+                        [(ngModel)]="transaction.addesses" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.status" for="field_status">Status</label>
+                    <input type="text" class="form-control" name="status" id="field_status"
+                        [(ngModel)]="transaction.status" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.statusDisplay" for="field_statusDisplay">Status Display</label>
+                    <input type="text" class="form-control" name="statusDisplay" id="field_statusDisplay"
+                        [(ngModel)]="transaction.statusDisplay" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.editable" for="field_editable">Editable</label>
+                    <input type="text" class="form-control" name="editable" id="field_editable"
+                        [(ngModel)]="transaction.editable" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.editMode" for="field_editMode">Edit Mode</label>
+                    <input type="text" class="form-control" name="editMode" id="field_editMode"
+                        [(ngModel)]="transaction.editMode" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.active" for="field_active">Active</label>
+                    <input type="text" class="form-control" name="active" id="field_active"
+                        [(ngModel)]="transaction.active" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.cost" for="field_cost">Cost</label>
+                    <input type="text" class="form-control" name="cost" id="field_cost"
+                        [(ngModel)]="transaction.cost" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.referenceId" for="field_referenceId">Reference Id</label>
+                    <input type="text" class="form-control" name="referenceId" id="field_referenceId"
+                        [(ngModel)]="transaction.referenceId" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.user" for="field_user">User</label>
+                    <input type="text" class="form-control" name="user" id="field_user"
+                        [(ngModel)]="transaction.user" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.company" for="field_company">Company</label>
+                    <input type="text" class="form-control" name="company" id="field_company"
+                        [(ngModel)]="transaction.company" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.createdAt" for="field_createdAt">Created At</label>
+                    <input type="text" class="form-control" name="createdAt" id="field_createdAt"
+                        [(ngModel)]="transaction.createdAt" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.statusNr" for="field_statusNr">Status Nr</label>
+                    <input type="text" class="form-control" name="statusNr" id="field_statusNr"
+                        [(ngModel)]="transaction.statusNr" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.redirectUrl" for="field_redirectUrl">Redirect Url</label>
+                    <input type="text" class="form-control" name="redirectUrl" id="field_redirectUrl"
+                        [(ngModel)]="transaction.redirectUrl" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.consentForm" for="field_consentForm">Consent Form</label>
+                    <input type="text" class="form-control" name="consentForm" id="field_consentForm"
+                        [(ngModel)]="transaction.consentForm" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.localConsentForm" for="field_localConsentForm">Local Consent Form</label>
+                    <input type="text" class="form-control" name="localConsentForm" id="field_localConsentForm"
+                        [(ngModel)]="transaction.localConsentForm" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.valid" for="field_valid">Valid</label>
+                    <input type="text" class="form-control" name="valid" id="field_valid"
+                        [(ngModel)]="transaction.valid" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.updatedAt" for="field_updatedAt">Updated At</label>
+                    <input type="text" class="form-control" name="updatedAt" id="field_updatedAt"
+                        [(ngModel)]="transaction.updatedAt" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.transaction.orders" for="field_orders">Orders</label>
+                    <input type="text" class="form-control" name="orders" id="field_orders"
+                        [(ngModel)]="transaction.orders" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

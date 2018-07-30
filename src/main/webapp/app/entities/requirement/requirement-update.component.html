@@ -1,0 +1,89 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-requirement-heading" jhiTranslate="pangeodataJHipsterApp.requirement.home.createOrEditLabel">Create or edit a Requirement</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!requirement.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="requirement.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.requirement.name" for="field_name">Name</label>
+                    <input type="text" class="form-control" name="name" id="field_name"
+                        [(ngModel)]="requirement.name" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.requirement.links" for="field_links">Links</label>
+                    <input type="text" class="form-control" name="links" id="field_links"
+                        [(ngModel)]="requirement.links" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.requirement.country" for="field_country">Country</label>
+                    <input type="text" class="form-control" name="country" id="field_country"
+                        [(ngModel)]="requirement.country" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.requirement.product" for="field_product">Product</label>
+                    <input type="text" class="form-control" name="product" id="field_product"
+                        [(ngModel)]="requirement.product" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.requirement.type" for="field_type">Type</label>
+                    <input type="text" class="form-control" name="type" id="field_type"
+                        [(ngModel)]="requirement.type" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.requirement.input" for="field_input">Input</label>
+                    <input type="text" class="form-control" name="input" id="field_input"
+                        [(ngModel)]="requirement.input" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.requirement.form" for="field_form">Form</label>
+                    <input type="text" class="form-control" name="form" id="field_form"
+                        [(ngModel)]="requirement.form" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.requirement.active" for="field_active">Active</label>
+                    <input type="text" class="form-control" name="active" id="field_active"
+                        [(ngModel)]="requirement.active" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.requirement.createdAt" for="field_createdAt">Created At</label>
+                    <input type="text" class="form-control" name="createdAt" id="field_createdAt"
+                        [(ngModel)]="requirement.createdAt" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.requirement.updatedAt" for="field_updatedAt">Updated At</label>
+                    <input type="text" class="form-control" name="updatedAt" id="field_updatedAt"
+                        [(ngModel)]="requirement.updatedAt" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.requirement.displayOrder" for="field_displayOrder">Display Order</label>
+                    <input type="text" class="form-control" name="displayOrder" id="field_displayOrder"
+                        [(ngModel)]="requirement.displayOrder" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.requirement.displayDownloadLink" for="field_displayDownloadLink">Display Download Link</label>
+                    <input type="text" class="form-control" name="displayDownloadLink" id="field_displayDownloadLink"
+                        [(ngModel)]="requirement.displayDownloadLink" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.requirement.iCoverName" for="field_iCoverName">I Cover Name</label>
+                    <input type="text" class="form-control" name="iCoverName" id="field_iCoverName"
+                        [(ngModel)]="requirement.iCoverName" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

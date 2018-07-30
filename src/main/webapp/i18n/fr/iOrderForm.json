@@ -1,0 +1,21 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "iOrderForm" : {
+            "home": {
+                "title": "IOrderForms",
+                "createLabel": "Créer un nouveau I Order Form",
+                "createOrEditLabel": "Créer ou éditer un I Order Form"
+            },
+            "created": "Un nouveau I Order Form a été créé avec l'identifiant {{ param }}",
+            "updated": "Le I Order Form avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le I Order Form avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le I Order Form {{ id }} ?"
+            },
+            "detail": {
+                "title": "I Order Form"
+            }
+        }
+    }
+}

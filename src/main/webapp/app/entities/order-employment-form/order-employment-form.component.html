@@ -1,0 +1,88 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.home.title">Order Employment Forms</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-order-employment-form" [routerLink]="['/order-employment-form/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.home.createLabel">
+            Create new Order Employment Form
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="orderEmploymentForms">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.employerName">Employer Name</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.managerName">Manager Name</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.endingPay">Ending Pay</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.rehireEligibility">Rehire Eligibility</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.institutionLocalName">Institution Local Name</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.sourceWebsite">Source Website</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.sourcePhone">Source Phone</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.sourceEmail">Source Email</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.present">Present</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.employmentStartDate">Employment Start Date</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.employmentEndDate">Employment End Date</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.endingPosition">Ending Position</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.startingPosition">Starting Position</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.startingPay">Starting Pay</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.street">Street</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.postalCode">Postal Code</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.reasonForLeaving">Reason For Leaving</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.notes">Notes</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let orderEmploymentForm of orderEmploymentForms ;trackBy: trackId">
+                <td><a [routerLink]="['/order-employment-form', orderEmploymentForm.id, 'view' ]">{{orderEmploymentForm.id}}</a></td>
+                <td>{{orderEmploymentForm.employerName}}</td>
+                <td>{{orderEmploymentForm.managerName}}</td>
+                <td>{{orderEmploymentForm.endingPay}}</td>
+                <td>{{orderEmploymentForm.rehireEligibility}}</td>
+                <td>{{orderEmploymentForm.institutionLocalName}}</td>
+                <td>{{orderEmploymentForm.sourceWebsite}}</td>
+                <td>{{orderEmploymentForm.sourcePhone}}</td>
+                <td>{{orderEmploymentForm.sourceEmail}}</td>
+                <td>{{orderEmploymentForm.present}}</td>
+                <td>{{orderEmploymentForm.employmentStartDate}}</td>
+                <td>{{orderEmploymentForm.employmentEndDate}}</td>
+                <td>{{orderEmploymentForm.endingPosition}}</td>
+                <td>{{orderEmploymentForm.startingPosition}}</td>
+                <td>{{orderEmploymentForm.startingPay}}</td>
+                <td>{{orderEmploymentForm.street}}</td>
+                <td>{{orderEmploymentForm.postalCode}}</td>
+                <td>{{orderEmploymentForm.reasonForLeaving}}</td>
+                <td>{{orderEmploymentForm.notes}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/order-employment-form', orderEmploymentForm.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/order-employment-form', orderEmploymentForm.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'order-employment-form/'+ orderEmploymentForm.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

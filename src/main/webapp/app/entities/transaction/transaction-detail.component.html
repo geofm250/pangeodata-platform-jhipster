@@ -1,0 +1,99 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="transaction">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.transaction.detail.title">Transaction</span> {{transaction.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.generalnformation">Generalnformation</span></dt>
+                <dd>
+                    <span>{{transaction.generalnformation}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.addesses">Addesses</span></dt>
+                <dd>
+                    <span>{{transaction.addesses}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.status">Status</span></dt>
+                <dd>
+                    <span>{{transaction.status}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.statusDisplay">Status Display</span></dt>
+                <dd>
+                    <span>{{transaction.statusDisplay}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.editable">Editable</span></dt>
+                <dd>
+                    <span>{{transaction.editable}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.editMode">Edit Mode</span></dt>
+                <dd>
+                    <span>{{transaction.editMode}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.active">Active</span></dt>
+                <dd>
+                    <span>{{transaction.active}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.cost">Cost</span></dt>
+                <dd>
+                    <span>{{transaction.cost}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.referenceId">Reference Id</span></dt>
+                <dd>
+                    <span>{{transaction.referenceId}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.user">User</span></dt>
+                <dd>
+                    <span>{{transaction.user}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.company">Company</span></dt>
+                <dd>
+                    <span>{{transaction.company}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.createdAt">Created At</span></dt>
+                <dd>
+                    <span>{{transaction.createdAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.statusNr">Status Nr</span></dt>
+                <dd>
+                    <span>{{transaction.statusNr}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.redirectUrl">Redirect Url</span></dt>
+                <dd>
+                    <span>{{transaction.redirectUrl}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.consentForm">Consent Form</span></dt>
+                <dd>
+                    <span>{{transaction.consentForm}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.localConsentForm">Local Consent Form</span></dt>
+                <dd>
+                    <span>{{transaction.localConsentForm}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.valid">Valid</span></dt>
+                <dd>
+                    <span>{{transaction.valid}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.updatedAt">Updated At</span></dt>
+                <dd>
+                    <span>{{transaction.updatedAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.transaction.orders">Orders</span></dt>
+                <dd>
+                    <span>{{transaction.orders}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/transaction', transaction.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-education-report-heading" jhiTranslate="pangeodataJHipsterApp.educationReport.home.createOrEditLabel">Create or edit a Education Report</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!educationReport.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="educationReport.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.educationReport.degreeVerified" for="field_degreeVerified">Degree Verified</label>
+                    <input type="text" class="form-control" name="degreeVerified" id="field_degreeVerified"
+                        [(ngModel)]="educationReport.degreeVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.educationReport.institutionVerified" for="field_institutionVerified">Institution Verified</label>
+                    <input type="text" class="form-control" name="institutionVerified" id="field_institutionVerified"
+                        [(ngModel)]="educationReport.institutionVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.educationReport.attendanceStartDateVerified" for="field_attendanceStartDateVerified">Attendance Start Date Verified</label>
+                    <input type="text" class="form-control" name="attendanceStartDateVerified" id="field_attendanceStartDateVerified"
+                        [(ngModel)]="educationReport.attendanceStartDateVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.educationReport.attendanceEndDate" for="field_attendanceEndDate">Attendance End Date</label>
+                    <input type="text" class="form-control" name="attendanceEndDate" id="field_attendanceEndDate"
+                        [(ngModel)]="educationReport.attendanceEndDate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.educationReport.attendanceEndDateVerified" for="field_attendanceEndDateVerified">Attendance End Date Verified</label>
+                    <input type="text" class="form-control" name="attendanceEndDateVerified" id="field_attendanceEndDateVerified"
+                        [(ngModel)]="educationReport.attendanceEndDateVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.educationReport.degreeEarned" for="field_degreeEarned">Degree Earned</label>
+                    <input type="text" class="form-control" name="degreeEarned" id="field_degreeEarned"
+                        [(ngModel)]="educationReport.degreeEarned" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.educationReport.majorVerified" for="field_majorVerified">Major Verified</label>
+                    <input type="text" class="form-control" name="majorVerified" id="field_majorVerified"
+                        [(ngModel)]="educationReport.majorVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.educationReport.graduationDateVerified" for="field_graduationDateVerified">Graduation Date Verified</label>
+                    <input type="text" class="form-control" name="graduationDateVerified" id="field_graduationDateVerified"
+                        [(ngModel)]="educationReport.graduationDateVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.educationReport.educationPersonContactName" for="field_educationPersonContactName">Education Person Contact Name</label>
+                    <input type="text" class="form-control" name="educationPersonContactName" id="field_educationPersonContactName"
+                        [(ngModel)]="educationReport.educationPersonContactName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.educationReport.educationDesignationContact" for="field_educationDesignationContact">Education Designation Contact</label>
+                    <input type="text" class="form-control" name="educationDesignationContact" id="field_educationDesignationContact"
+                        [(ngModel)]="educationReport.educationDesignationContact" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.educationReport.educationVerifiedDate" for="field_educationVerifiedDate">Education Verified Date</label>
+                    <input type="text" class="form-control" name="educationVerifiedDate" id="field_educationVerifiedDate"
+                        [(ngModel)]="educationReport.educationVerifiedDate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.educationReport.educationRemarks" for="field_educationRemarks">Education Remarks</label>
+                    <input type="text" class="form-control" name="educationRemarks" id="field_educationRemarks"
+                        [(ngModel)]="educationReport.educationRemarks" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

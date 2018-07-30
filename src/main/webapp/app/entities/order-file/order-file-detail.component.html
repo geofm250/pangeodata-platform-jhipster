@@ -1,0 +1,51 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="orderFile">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.orderFile.detail.title">Order File</span> {{orderFile.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderFile.name">Name</span></dt>
+                <dd>
+                    <span>{{orderFile.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderFile.localFiles">Local Files</span></dt>
+                <dd>
+                    <span>{{orderFile.localFiles}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderFile.files">Files</span></dt>
+                <dd>
+                    <span>{{orderFile.files}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderFile.links">Links</span></dt>
+                <dd>
+                    <span>{{orderFile.links}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderFile.displayLinks">Display Links</span></dt>
+                <dd>
+                    <span>{{orderFile.displayLinks}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderFile.iCoverName">I Cover Name</span></dt>
+                <dd>
+                    <span>{{orderFile.iCoverName}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderFile.orderId">Order Id</span></dt>
+                <dd>
+                    <span>{{orderFile.orderId}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/order-file', orderFile.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

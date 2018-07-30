@@ -1,0 +1,28 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "generalInformation" : {
+            "home": {
+                "title": "General Informations",
+                "createLabel": "Create a new General Information",
+                "createOrEditLabel": "Create or edit a General Information"
+            },
+            "created": "A new General Information is created with identifier {{ param }}",
+            "updated": "A General Information is updated with identifier {{ param }}",
+            "deleted": "A General Information is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete General Information {{ id }}?"
+            },
+            "detail": {
+                "title": "General Information"
+            },
+            "firstName": "First Name",
+            "middleName": "Middle Name",
+            "lastName": "Last Name",
+            "maidenName": "Maiden Name",
+            "title": "Title",
+            "birthDate": "Birth Date",
+            "referenceId": "Reference Id"
+        }
+    }
+}

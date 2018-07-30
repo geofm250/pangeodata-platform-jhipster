@@ -1,0 +1,84 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-employment-report-heading" jhiTranslate="pangeodataJHipsterApp.employmentReport.home.createOrEditLabel">Create or edit a Employment Report</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!employmentReport.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="employmentReport.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.employmentReport.employerVerified" for="field_employerVerified">Employer Verified</label>
+                    <input type="text" class="form-control" name="employerVerified" id="field_employerVerified"
+                        [(ngModel)]="employmentReport.employerVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentStartDateVerified" for="field_employmentStartDateVerified">Employment Start Date Verified</label>
+                    <input type="text" class="form-control" name="employmentStartDateVerified" id="field_employmentStartDateVerified"
+                        [(ngModel)]="employmentReport.employmentStartDateVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentEndDateVerified" for="field_employmentEndDateVerified">Employment End Date Verified</label>
+                    <input type="text" class="form-control" name="employmentEndDateVerified" id="field_employmentEndDateVerified"
+                        [(ngModel)]="employmentReport.employmentEndDateVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.employmentReport.titleVerified" for="field_titleVerified">Title Verified</label>
+                    <input type="text" class="form-control" name="titleVerified" id="field_titleVerified"
+                        [(ngModel)]="employmentReport.titleVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.employmentReport.slaryVerified" for="field_slaryVerified">Slary Verified</label>
+                    <input type="text" class="form-control" name="slaryVerified" id="field_slaryVerified"
+                        [(ngModel)]="employmentReport.slaryVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.employmentReport.reasonForTermination" for="field_reasonForTermination">Reason For Termination</label>
+                    <input type="text" class="form-control" name="reasonForTermination" id="field_reasonForTermination"
+                        [(ngModel)]="employmentReport.reasonForTermination" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentPersonContactName" for="field_employmentPersonContactName">Employment Person Contact Name</label>
+                    <input type="text" class="form-control" name="employmentPersonContactName" id="field_employmentPersonContactName"
+                        [(ngModel)]="employmentReport.employmentPersonContactName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentDesignationContact" for="field_employmentDesignationContact">Employment Designation Contact</label>
+                    <input type="text" class="form-control" name="employmentDesignationContact" id="field_employmentDesignationContact"
+                        [(ngModel)]="employmentReport.employmentDesignationContact" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentVerifiedDate" for="field_employmentVerifiedDate">Employment Verified Date</label>
+                    <input type="text" class="form-control" name="employmentVerifiedDate" id="field_employmentVerifiedDate"
+                        [(ngModel)]="employmentReport.employmentVerifiedDate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentRehireEligibility" for="field_employmentRehireEligibility">Employment Rehire Eligibility</label>
+                    <input type="text" class="form-control" name="employmentRehireEligibility" id="field_employmentRehireEligibility"
+                        [(ngModel)]="employmentReport.employmentRehireEligibility" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentRehireExplanation" for="field_employmentRehireExplanation">Employment Rehire Explanation</label>
+                    <input type="text" class="form-control" name="employmentRehireExplanation" id="field_employmentRehireExplanation"
+                        [(ngModel)]="employmentReport.employmentRehireExplanation" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentRemarks" for="field_employmentRemarks">Employment Remarks</label>
+                    <input type="text" class="form-control" name="employmentRemarks" id="field_employmentRemarks"
+                        [(ngModel)]="employmentReport.employmentRemarks" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

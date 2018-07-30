@@ -1,0 +1,75 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="requirement">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.requirement.detail.title">Requirement</span> {{requirement.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.requirement.name">Name</span></dt>
+                <dd>
+                    <span>{{requirement.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.requirement.links">Links</span></dt>
+                <dd>
+                    <span>{{requirement.links}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.requirement.country">Country</span></dt>
+                <dd>
+                    <span>{{requirement.country}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.requirement.product">Product</span></dt>
+                <dd>
+                    <span>{{requirement.product}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.requirement.type">Type</span></dt>
+                <dd>
+                    <span>{{requirement.type}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.requirement.input">Input</span></dt>
+                <dd>
+                    <span>{{requirement.input}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.requirement.form">Form</span></dt>
+                <dd>
+                    <span>{{requirement.form}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.requirement.active">Active</span></dt>
+                <dd>
+                    <span>{{requirement.active}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.requirement.createdAt">Created At</span></dt>
+                <dd>
+                    <span>{{requirement.createdAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.requirement.updatedAt">Updated At</span></dt>
+                <dd>
+                    <span>{{requirement.updatedAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.requirement.displayOrder">Display Order</span></dt>
+                <dd>
+                    <span>{{requirement.displayOrder}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.requirement.displayDownloadLink">Display Download Link</span></dt>
+                <dd>
+                    <span>{{requirement.displayDownloadLink}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.requirement.iCoverName">I Cover Name</span></dt>
+                <dd>
+                    <span>{{requirement.iCoverName}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/requirement', requirement.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "civilLitigationCheckReport" : {
+            "home": {
+                "title": "Civil Litigation Check Reports",
+                "createLabel": "Create a new Civil Litigation Check Report",
+                "createOrEditLabel": "Create or edit a Civil Litigation Check Report"
+            },
+            "created": "A new Civil Litigation Check Report is created with identifier {{ param }}",
+            "updated": "A Civil Litigation Check Report is updated with identifier {{ param }}",
+            "deleted": "A Civil Litigation Check Report is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Civil Litigation Check Report {{ id }}?"
+            },
+            "detail": {
+                "title": "Civil Litigation Check Report"
+            },
+            "civilRecordFound": "Civil Record Found",
+            "civilFindings": "Civil Findings",
+            "civilVerifiedBy": "Civil Verified By",
+            "civilVerifiedDate": "Civil Verified Date",
+            "civilRemarks": "Civil Remarks"
+        }
+    }
+}

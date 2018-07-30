@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="orderForm">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.orderForm.detail.title">Order Form</span> {{orderForm.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderForm.formType">Form Type</span></dt>
+                <dd>
+                    <span>{{orderForm.formType}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderForm.input">Input</span></dt>
+                <dd>
+                    <span>{{orderForm.input}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderForm.valid">Valid</span></dt>
+                <dd>
+                    <span>{{orderForm.valid}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderForm.name">Name</span></dt>
+                <dd>
+                    <span>{{orderForm.name}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/order-form', orderForm.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

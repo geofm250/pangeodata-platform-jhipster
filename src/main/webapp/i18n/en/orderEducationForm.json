@@ -1,0 +1,41 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "orderEducationForm" : {
+            "home": {
+                "title": "Order Education Forms",
+                "createLabel": "Create a new Order Education Form",
+                "createOrEditLabel": "Create or edit a Order Education Form"
+            },
+            "created": "A new Order Education Form is created with identifier {{ param }}",
+            "updated": "A Order Education Form is updated with identifier {{ param }}",
+            "deleted": "A Order Education Form is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Order Education Form {{ id }}?"
+            },
+            "detail": {
+                "title": "Order Education Form"
+            },
+            "typeDiploma": "Type Diploma",
+            "nameOfInstitution": "Name Of Institution",
+            "institutionLocalName": "Institution Local Name",
+            "subject": "Subject",
+            "performance": "Performance",
+            "typeOfInstitution": "Type Of Institution",
+            "sourceWebsite": "Source Website",
+            "sourceName": "Source Name",
+            "sourcePhone": "Source Phone",
+            "sourceEmail": "Source Email",
+            "present": "Present",
+            "attendanceStartDate": "Attendance Start Date",
+            "attendanceEndDate": "Attendance End Date",
+            "diplomaAwardDate": "Diploma Award Date",
+            "studentRegistrationNo": "Student Registration No",
+            "town": "Town",
+            "state": "State",
+            "country": "Country",
+            "postalCode": "Postal Code",
+            "notes": "Notes"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "socialMediaCheckReport" : {
+            "home": {
+                "title": "SocialMediaCheckReports",
+                "createLabel": "Créer un nouveau Social Media Check Report",
+                "createOrEditLabel": "Créer ou éditer un Social Media Check Report"
+            },
+            "created": "Un nouveau Social Media Check Report a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Social Media Check Report avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Social Media Check Report avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Social Media Check Report {{ id }} ?"
+            },
+            "detail": {
+                "title": "Social Media Check Report"
+            },
+            "socialMediaSourcesChecked": "Social Media Sources Checked",
+            "socialMediaFindings": "Social Media Findings",
+            "socialMediaVerifiedDate": "Social Media Verified Date"
+        }
+    }
+}

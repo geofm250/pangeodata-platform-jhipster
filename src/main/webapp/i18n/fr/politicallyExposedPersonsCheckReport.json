@@ -1,0 +1,25 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "politicallyExposedPersonsCheckReport" : {
+            "home": {
+                "title": "PoliticallyExposedPersonsCheckReports",
+                "createLabel": "Créer un nouveau Politically Exposed Persons Check Report",
+                "createOrEditLabel": "Créer ou éditer un Politically Exposed Persons Check Report"
+            },
+            "created": "Un nouveau Politically Exposed Persons Check Report a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Politically Exposed Persons Check Report avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Politically Exposed Persons Check Report avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Politically Exposed Persons Check Report {{ id }} ?"
+            },
+            "detail": {
+                "title": "Politically Exposed Persons Check Report"
+            },
+            "pepIdentified": "Pep Identified",
+            "pepVerifiedBy": "Pep Verified By",
+            "pepVerifiedDate": "Pep Verified Date",
+            "pepRemarks": "Pep Remarks"
+        }
+    }
+}

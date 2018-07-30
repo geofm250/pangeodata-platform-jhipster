@@ -1,0 +1,25 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "defaultReport" : {
+            "home": {
+                "title": "DefaultReports",
+                "createLabel": "Créer un nouveau Default Report",
+                "createOrEditLabel": "Créer ou éditer un Default Report"
+            },
+            "created": "Un nouveau Default Report a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Default Report avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Default Report avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Default Report {{ id }} ?"
+            },
+            "detail": {
+                "title": "Default Report"
+            },
+            "verifiedBy": "Verified By",
+            "findings": "Findings",
+            "verifiedDate": "Verified Date",
+            "remarks": "Remarks"
+        }
+    }
+}

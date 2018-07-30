@@ -1,0 +1,35 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "customUser" : {
+            "home": {
+                "title": "CustomUsers",
+                "createLabel": "Créer un nouveau Custom User",
+                "createOrEditLabel": "Créer ou éditer un Custom User"
+            },
+            "created": "Un nouveau Custom User a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Custom User avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Custom User avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Custom User {{ id }} ?"
+            },
+            "detail": {
+                "title": "Custom User"
+            },
+            "firstname": "Firstname",
+            "lastname": "Lastname",
+            "username": "Username",
+            "email": "Email",
+            "role": "Role",
+            "company": "Company",
+            "name": "Name",
+            "surname": "Surname",
+            "password": "Password",
+            "active": "Active",
+            "createdAt": "Created At",
+            "updatedAt": "Updated At",
+            "isTokenLogin": "Is Token Login",
+            "orderId": "Order Id"
+        }
+    }
+}

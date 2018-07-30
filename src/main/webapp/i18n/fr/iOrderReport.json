@@ -1,0 +1,21 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "iOrderReport" : {
+            "home": {
+                "title": "IOrderReports",
+                "createLabel": "Créer un nouveau I Order Report",
+                "createOrEditLabel": "Créer ou éditer un I Order Report"
+            },
+            "created": "Un nouveau I Order Report a été créé avec l'identifiant {{ param }}",
+            "updated": "Le I Order Report avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le I Order Report avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le I Order Report {{ id }} ?"
+            },
+            "detail": {
+                "title": "I Order Report"
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "employmentReport" : {
+            "home": {
+                "title": "Employment Reports",
+                "createLabel": "Create a new Employment Report",
+                "createOrEditLabel": "Create or edit a Employment Report"
+            },
+            "created": "A new Employment Report is created with identifier {{ param }}",
+            "updated": "A Employment Report is updated with identifier {{ param }}",
+            "deleted": "A Employment Report is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Employment Report {{ id }}?"
+            },
+            "detail": {
+                "title": "Employment Report"
+            },
+            "employerVerified": "Employer Verified",
+            "employmentStartDateVerified": "Employment Start Date Verified",
+            "employmentEndDateVerified": "Employment End Date Verified",
+            "titleVerified": "Title Verified",
+            "slaryVerified": "Slary Verified",
+            "reasonForTermination": "Reason For Termination",
+            "employmentPersonContactName": "Employment Person Contact Name",
+            "employmentDesignationContact": "Employment Designation Contact",
+            "employmentVerifiedDate": "Employment Verified Date",
+            "employmentRehireEligibility": "Employment Rehire Eligibility",
+            "employmentRehireExplanation": "Employment Rehire Explanation",
+            "employmentRemarks": "Employment Remarks"
+        }
+    }
+}

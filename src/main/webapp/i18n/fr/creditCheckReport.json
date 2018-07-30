@@ -1,0 +1,25 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "creditCheckReport" : {
+            "home": {
+                "title": "CreditCheckReports",
+                "createLabel": "Créer un nouveau Credit Check Report",
+                "createOrEditLabel": "Créer ou éditer un Credit Check Report"
+            },
+            "created": "Un nouveau Credit Check Report a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Credit Check Report avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Credit Check Report avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Credit Check Report {{ id }} ?"
+            },
+            "detail": {
+                "title": "Credit Check Report"
+            },
+            "creditFindings": "Credit Findings",
+            "creditVerifiedBy": "Credit Verified By",
+            "creditVerifiedDate": "Credit Verified Date",
+            "creditRemarks": "Credit Remarks"
+        }
+    }
+}

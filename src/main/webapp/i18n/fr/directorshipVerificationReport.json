@@ -1,0 +1,25 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "directorshipVerificationReport" : {
+            "home": {
+                "title": "DirectorshipVerificationReports",
+                "createLabel": "Créer un nouveau Directorship Verification Report",
+                "createOrEditLabel": "Créer ou éditer un Directorship Verification Report"
+            },
+            "created": "Un nouveau Directorship Verification Report a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Directorship Verification Report avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Directorship Verification Report avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Directorship Verification Report {{ id }} ?"
+            },
+            "detail": {
+                "title": "Directorship Verification Report"
+            },
+            "directorshipVerified": "Directorship Verified",
+            "directorshipFindings": "Directorship Findings",
+            "directorshipVerifiedBy": "Directorship Verified By",
+            "directorshipVerifiedDate": "Directorship Verified Date"
+        }
+    }
+}

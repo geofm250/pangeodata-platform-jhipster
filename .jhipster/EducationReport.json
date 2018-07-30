@@ -1,0 +1,63 @@
+{
+    "name": "EducationReport",
+    "fields": [
+        {
+            "fieldName": "degreeVerified",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "institutionVerified",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "attendanceStartDateVerified",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "attendanceEndDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "attendanceEndDateVerified",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "degreeEarned",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "majorVerified",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "graduationDateVerified",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "educationPersonContactName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "educationDesignationContact",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "educationVerifiedDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "educationRemarks",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180730145640",
+    "entityTableName": "education_report",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

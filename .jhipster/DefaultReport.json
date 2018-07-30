@@ -1,0 +1,31 @@
+{
+    "name": "DefaultReport",
+    "fields": [
+        {
+            "fieldName": "verifiedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "findings",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "verifiedDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "remarks",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180730145656",
+    "entityTableName": "default_report",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
