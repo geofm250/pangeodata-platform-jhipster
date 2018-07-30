@@ -1,0 +1,25 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "bankruptcyCheckReport" : {
+            "home": {
+                "title": "Bankruptcy Check Reports",
+                "createLabel": "Create a new Bankruptcy Check Report",
+                "createOrEditLabel": "Create or edit a Bankruptcy Check Report"
+            },
+            "created": "A new Bankruptcy Check Report is created with identifier {{ param }}",
+            "updated": "A Bankruptcy Check Report is updated with identifier {{ param }}",
+            "deleted": "A Bankruptcy Check Report is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Bankruptcy Check Report {{ id }}?"
+            },
+            "detail": {
+                "title": "Bankruptcy Check Report"
+            },
+            "bankruptcyFindings": "Bankruptcy Findings",
+            "bankruptcyVerifiedBy": "Bankruptcy Verified By",
+            "bankruptcyVerifiedDate": "Bankruptcy Verified Date",
+            "bankruptcyRemarks": "Bankruptcy Remarks"
+        }
+    }
+}

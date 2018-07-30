@@ -1,0 +1,25 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "criminalRecordReport" : {
+            "home": {
+                "title": "Criminal Record Reports",
+                "createLabel": "Create a new Criminal Record Report",
+                "createOrEditLabel": "Create or edit a Criminal Record Report"
+            },
+            "created": "A new Criminal Record Report is created with identifier {{ param }}",
+            "updated": "A Criminal Record Report is updated with identifier {{ param }}",
+            "deleted": "A Criminal Record Report is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Criminal Record Report {{ id }}?"
+            },
+            "detail": {
+                "title": "Criminal Record Report"
+            },
+            "recordFound": "Record Found",
+            "offences": "Offences",
+            "verifiedBy": "Verified By",
+            "verifiedDate": "Verified Date"
+        }
+    }
+}

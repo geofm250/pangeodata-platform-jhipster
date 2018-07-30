@@ -1,0 +1,67 @@
+{
+    "name": "Requirement",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "links",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "country",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "product",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "input",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "form",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "active",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdAt",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "updatedAt",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "displayOrder",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "displayDownloadLink",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "iCoverName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180730145457",
+    "entityTableName": "requirement",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

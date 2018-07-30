@@ -1,0 +1,25 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "identityCheckReport" : {
+            "home": {
+                "title": "Identity Check Reports",
+                "createLabel": "Create a new Identity Check Report",
+                "createOrEditLabel": "Create or edit a Identity Check Report"
+            },
+            "created": "A new Identity Check Report is created with identifier {{ param }}",
+            "updated": "A Identity Check Report is updated with identifier {{ param }}",
+            "deleted": "A Identity Check Report is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Identity Check Report {{ id }}?"
+            },
+            "detail": {
+                "title": "Identity Check Report"
+            },
+            "idVerified": "Id Verified",
+            "idAuthVerifiedBy": "Id Auth Verified By",
+            "idVerifiedDate": "Id Verified Date",
+            "idRemarks": "Id Remarks"
+        }
+    }
+}

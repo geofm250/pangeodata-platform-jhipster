@@ -1,0 +1,127 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="order">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.order.detail.title">Order</span> {{order.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.files">Files</span></dt>
+                <dd>
+                    <span>{{order.files}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.reqInputs">Req Inputs</span></dt>
+                <dd>
+                    <span>{{order.reqInputs}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.reqFormInputs">Req Form Inputs</span></dt>
+                <dd>
+                    <span>{{order.reqFormInputs}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.product">Product</span></dt>
+                <dd>
+                    <span>{{order.product}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.transaction">Transaction</span></dt>
+                <dd>
+                    <span>{{order.transaction}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.user">User</span></dt>
+                <dd>
+                    <span>{{order.user}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.status">Status</span></dt>
+                <dd>
+                    <span>{{order.status}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.rejectReason">Reject Reason</span></dt>
+                <dd>
+                    <span>{{order.rejectReason}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.company">Company</span></dt>
+                <dd>
+                    <span>{{order.company}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.partner">Partner</span></dt>
+                <dd>
+                    <span>{{order.partner}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.country">Country</span></dt>
+                <dd>
+                    <span>{{order.country}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.createdAt">Created At</span></dt>
+                <dd>
+                    <span>{{order.createdAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.updatedAt">Updated At</span></dt>
+                <dd>
+                    <span>{{order.updatedAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.expectedDate">Expected Date</span></dt>
+                <dd>
+                    <span>{{order.expectedDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.dayTillComplete">Day Till Complete</span></dt>
+                <dd>
+                    <span>{{order.dayTillComplete}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.cost">Cost</span></dt>
+                <dd>
+                    <span>{{order.cost}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.turnAroundTime">Turn Around Time</span></dt>
+                <dd>
+                    <span>{{order.turnAroundTime}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.report">Report</span></dt>
+                <dd>
+                    <span>{{order.report}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.refereneceId">Referenece Id</span></dt>
+                <dd>
+                    <span>{{order.refereneceId}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.cancellationReason">Cancellation Reason</span></dt>
+                <dd>
+                    <span>{{order.cancellationReason}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.clientId">Client Id</span></dt>
+                <dd>
+                    <span>{{order.clientId}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.active">Active</span></dt>
+                <dd>
+                    <span>{{order.active}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.selected">Selected</span></dt>
+                <dd>
+                    <span>{{order.selected}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.applicationId">Application Id</span></dt>
+                <dd>
+                    <span>{{order.applicationId}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.applicationServiceIds">Application Service Ids</span></dt>
+                <dd>
+                    <span>{{order.applicationServiceIds}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.order.iCoverReport">I Cover Report</span></dt>
+                <dd>
+                    <span>{{order.iCoverReport}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/order', order.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

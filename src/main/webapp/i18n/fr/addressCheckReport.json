@@ -1,0 +1,26 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "addressCheckReport" : {
+            "home": {
+                "title": "AddressCheckReports",
+                "createLabel": "Créer un nouveau Address Check Report",
+                "createOrEditLabel": "Créer ou éditer un Address Check Report"
+            },
+            "created": "Un nouveau Address Check Report a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Address Check Report avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Address Check Report avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Address Check Report {{ id }} ?"
+            },
+            "detail": {
+                "title": "Address Check Report"
+            },
+            "addressVerified": "Address Verified",
+            "idAuthVerifiedBy": "Id Auth Verified By",
+            "addressVerifiedBy": "Address Verified By",
+            "addressVerifiedDate": "Address Verified Date",
+            "addressRemarks": "Address Remarks"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "localLanguageMediaCheckReport" : {
+            "home": {
+                "title": "Local Language Media Check Reports",
+                "createLabel": "Create a new Local Language Media Check Report",
+                "createOrEditLabel": "Create or edit a Local Language Media Check Report"
+            },
+            "created": "A new Local Language Media Check Report is created with identifier {{ param }}",
+            "updated": "A Local Language Media Check Report is updated with identifier {{ param }}",
+            "deleted": "A Local Language Media Check Report is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Local Language Media Check Report {{ id }}?"
+            },
+            "detail": {
+                "title": "Local Language Media Check Report"
+            },
+            "localLanguageMediaFindings": "Local Language Media Findings",
+            "localLanguageMediaStatus": "Local Language Media Status",
+            "localLanguageMediaVerifiedDate": "Local Language Media Verified Date"
+        }
+    }
+}

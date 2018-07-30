@@ -1,0 +1,103 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="orderEducationForm">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.detail.title">Order Education Form</span> {{orderEducationForm.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.typeDiploma">Type Diploma</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.typeDiploma}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.nameOfInstitution">Name Of Institution</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.nameOfInstitution}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.institutionLocalName">Institution Local Name</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.institutionLocalName}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.subject">Subject</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.subject}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.performance">Performance</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.performance}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.typeOfInstitution">Type Of Institution</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.typeOfInstitution}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.sourceWebsite">Source Website</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.sourceWebsite}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.sourceName">Source Name</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.sourceName}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.sourcePhone">Source Phone</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.sourcePhone}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.sourceEmail">Source Email</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.sourceEmail}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.present">Present</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.present}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.attendanceStartDate">Attendance Start Date</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.attendanceStartDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.attendanceEndDate">Attendance End Date</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.attendanceEndDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.diplomaAwardDate">Diploma Award Date</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.diplomaAwardDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.studentRegistrationNo">Student Registration No</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.studentRegistrationNo}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.town">Town</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.town}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.state">State</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.state}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.country">Country</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.country}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.postalCode">Postal Code</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.postalCode}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.notes">Notes</span></dt>
+                <dd>
+                    <span>{{orderEducationForm.notes}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/order-education-form', orderEducationForm.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

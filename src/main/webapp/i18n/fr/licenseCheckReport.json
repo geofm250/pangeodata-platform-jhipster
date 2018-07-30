@@ -1,0 +1,27 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "licenseCheckReport" : {
+            "home": {
+                "title": "LicenseCheckReports",
+                "createLabel": "Créer un nouveau License Check Report",
+                "createOrEditLabel": "Créer ou éditer un License Check Report"
+            },
+            "created": "Un nouveau License Check Report a été créé avec l'identifiant {{ param }}",
+            "updated": "Le License Check Report avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le License Check Report avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le License Check Report {{ id }} ?"
+            },
+            "detail": {
+                "title": "License Check Report"
+            },
+            "licenseVerified": "License Verified",
+            "licRegistrationNumber": "Lic Registration Number",
+            "licenseStatus": "License Status",
+            "licVerifiedBy": "Lic Verified By",
+            "licVerifiedDate": "Lic Verified Date",
+            "licRemarks": "Lic Remarks"
+        }
+    }
+}

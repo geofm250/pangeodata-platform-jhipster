@@ -1,0 +1,34 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "requirement" : {
+            "home": {
+                "title": "Requirements",
+                "createLabel": "Créer un nouveau Requirement",
+                "createOrEditLabel": "Créer ou éditer un Requirement"
+            },
+            "created": "Un nouveau Requirement a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Requirement avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Requirement avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Requirement {{ id }} ?"
+            },
+            "detail": {
+                "title": "Requirement"
+            },
+            "name": "Name",
+            "links": "Links",
+            "country": "Country",
+            "product": "Product",
+            "type": "Type",
+            "input": "Input",
+            "form": "Form",
+            "active": "Active",
+            "createdAt": "Created At",
+            "updatedAt": "Updated At",
+            "displayOrder": "Display Order",
+            "displayDownloadLink": "Display Download Link",
+            "iCoverName": "I Cover Name"
+        }
+    }
+}

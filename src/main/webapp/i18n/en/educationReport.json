@@ -1,0 +1,33 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "educationReport" : {
+            "home": {
+                "title": "Education Reports",
+                "createLabel": "Create a new Education Report",
+                "createOrEditLabel": "Create or edit a Education Report"
+            },
+            "created": "A new Education Report is created with identifier {{ param }}",
+            "updated": "A Education Report is updated with identifier {{ param }}",
+            "deleted": "A Education Report is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Education Report {{ id }}?"
+            },
+            "detail": {
+                "title": "Education Report"
+            },
+            "degreeVerified": "Degree Verified",
+            "institutionVerified": "Institution Verified",
+            "attendanceStartDateVerified": "Attendance Start Date Verified",
+            "attendanceEndDate": "Attendance End Date",
+            "attendanceEndDateVerified": "Attendance End Date Verified",
+            "degreeEarned": "Degree Earned",
+            "majorVerified": "Major Verified",
+            "graduationDateVerified": "Graduation Date Verified",
+            "educationPersonContactName": "Education Person Contact Name",
+            "educationDesignationContact": "Education Designation Contact",
+            "educationVerifiedDate": "Education Verified Date",
+            "educationRemarks": "Education Remarks"
+        }
+    }
+}

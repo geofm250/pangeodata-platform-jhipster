@@ -1,0 +1,25 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "referenceCheckReport" : {
+            "home": {
+                "title": "ReferenceCheckReports",
+                "createLabel": "Créer un nouveau Reference Check Report",
+                "createOrEditLabel": "Créer ou éditer un Reference Check Report"
+            },
+            "created": "Un nouveau Reference Check Report a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Reference Check Report avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Reference Check Report avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Reference Check Report {{ id }} ?"
+            },
+            "detail": {
+                "title": "Reference Check Report"
+            },
+            "nameOfReference": "Name Of Reference",
+            "designationOfReference": "Designation Of Reference",
+            "referenceResponse": "Reference Response",
+            "resVerifiedDate": "Res Verified Date"
+        }
+    }
+}

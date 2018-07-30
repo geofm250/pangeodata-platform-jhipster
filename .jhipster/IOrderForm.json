@@ -1,0 +1,14 @@
+{
+    "name": "IOrderForm",
+    "fields": [],
+    "relationships": [],
+    "changelogDate": "20180730145432",
+    "entityTableName": "i_order_form",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

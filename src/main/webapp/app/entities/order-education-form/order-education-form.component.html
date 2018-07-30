@@ -1,0 +1,92 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.home.title">Order Education Forms</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-order-education-form" [routerLink]="['/order-education-form/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="pangeodataJHipsterApp.orderEducationForm.home.createLabel">
+            Create new Order Education Form
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="orderEducationForms">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.typeDiploma">Type Diploma</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.nameOfInstitution">Name Of Institution</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.institutionLocalName">Institution Local Name</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.subject">Subject</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.performance">Performance</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.typeOfInstitution">Type Of Institution</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.sourceWebsite">Source Website</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.sourceName">Source Name</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.sourcePhone">Source Phone</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.sourceEmail">Source Email</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.present">Present</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.attendanceStartDate">Attendance Start Date</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.attendanceEndDate">Attendance End Date</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.diplomaAwardDate">Diploma Award Date</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.studentRegistrationNo">Student Registration No</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.town">Town</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.state">State</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.country">Country</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.postalCode">Postal Code</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.orderEducationForm.notes">Notes</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let orderEducationForm of orderEducationForms ;trackBy: trackId">
+                <td><a [routerLink]="['/order-education-form', orderEducationForm.id, 'view' ]">{{orderEducationForm.id}}</a></td>
+                <td>{{orderEducationForm.typeDiploma}}</td>
+                <td>{{orderEducationForm.nameOfInstitution}}</td>
+                <td>{{orderEducationForm.institutionLocalName}}</td>
+                <td>{{orderEducationForm.subject}}</td>
+                <td>{{orderEducationForm.performance}}</td>
+                <td>{{orderEducationForm.typeOfInstitution}}</td>
+                <td>{{orderEducationForm.sourceWebsite}}</td>
+                <td>{{orderEducationForm.sourceName}}</td>
+                <td>{{orderEducationForm.sourcePhone}}</td>
+                <td>{{orderEducationForm.sourceEmail}}</td>
+                <td>{{orderEducationForm.present}}</td>
+                <td>{{orderEducationForm.attendanceStartDate}}</td>
+                <td>{{orderEducationForm.attendanceEndDate}}</td>
+                <td>{{orderEducationForm.diplomaAwardDate}}</td>
+                <td>{{orderEducationForm.studentRegistrationNo}}</td>
+                <td>{{orderEducationForm.town}}</td>
+                <td>{{orderEducationForm.state}}</td>
+                <td>{{orderEducationForm.country}}</td>
+                <td>{{orderEducationForm.postalCode}}</td>
+                <td>{{orderEducationForm.notes}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/order-education-form', orderEducationForm.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/order-education-form', orderEducationForm.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'order-education-form/'+ orderEducationForm.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "applicationService" : {
+            "home": {
+                "title": "ApplicationServices",
+                "createLabel": "Créer un nouveau Application Service",
+                "createOrEditLabel": "Créer ou éditer un Application Service"
+            },
+            "created": "Un nouveau Application Service a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Application Service avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Application Service avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Application Service {{ id }} ?"
+            },
+            "detail": {
+                "title": "Application Service"
+            },
+            "applicationServiceId": "Application Service Id",
+            "orderId": "Order Id"
+        }
+    }
+}

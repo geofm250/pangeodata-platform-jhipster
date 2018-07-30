@@ -1,0 +1,59 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="address">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.address.detail.title">Address</span> {{address.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.address.current">Current</span></dt>
+                <dd>
+                    <span>{{address.current}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.address.startDate">Start Date</span></dt>
+                <dd>
+                    <span>{{address.startDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.address.country">Country</span></dt>
+                <dd>
+                    <span>{{address.country}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.address.endDate">End Date</span></dt>
+                <dd>
+                    <span>{{address.endDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.address.town">Town</span></dt>
+                <dd>
+                    <span>{{address.town}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.address.address1">Address 1</span></dt>
+                <dd>
+                    <span>{{address.address1}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.address.address2">Address 2</span></dt>
+                <dd>
+                    <span>{{address.address2}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.address.postalCode">Postal Code</span></dt>
+                <dd>
+                    <span>{{address.postalCode}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.address.province">Province</span></dt>
+                <dd>
+                    <span>{{address.province}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/address', address.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

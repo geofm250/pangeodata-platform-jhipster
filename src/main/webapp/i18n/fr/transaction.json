@@ -1,0 +1,40 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "transaction" : {
+            "home": {
+                "title": "Transactions",
+                "createLabel": "Créer un nouveau Transaction",
+                "createOrEditLabel": "Créer ou éditer un Transaction"
+            },
+            "created": "Un nouveau Transaction a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Transaction avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Transaction avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Transaction {{ id }} ?"
+            },
+            "detail": {
+                "title": "Transaction"
+            },
+            "generalnformation": "Generalnformation",
+            "addesses": "Addesses",
+            "status": "Status",
+            "statusDisplay": "Status Display",
+            "editable": "Editable",
+            "editMode": "Edit Mode",
+            "active": "Active",
+            "cost": "Cost",
+            "referenceId": "Reference Id",
+            "user": "User",
+            "company": "Company",
+            "createdAt": "Created At",
+            "statusNr": "Status Nr",
+            "redirectUrl": "Redirect Url",
+            "consentForm": "Consent Form",
+            "localConsentForm": "Local Consent Form",
+            "valid": "Valid",
+            "updatedAt": "Updated At",
+            "orders": "Orders"
+        }
+    }
+}

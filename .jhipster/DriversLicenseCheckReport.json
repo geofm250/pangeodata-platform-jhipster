@@ -1,0 +1,39 @@
+{
+    "name": "DriversLicenseCheckReport",
+    "fields": [
+        {
+            "fieldName": "driversLicenseVerified",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "driversLicenseNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "driversLicenseStatus",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "driverLicenseVerifiedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "driversLicenseVerifiedDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "driversLicenseRemarks",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180730145445",
+    "entityTableName": "drivers_license_check_report",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

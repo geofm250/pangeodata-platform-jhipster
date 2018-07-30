@@ -1,0 +1,43 @@
+{
+    "name": "OrderFile",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "localFiles",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "files",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "links",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "displayLinks",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "iCoverName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "orderId",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180730145423",
+    "entityTableName": "order_file",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

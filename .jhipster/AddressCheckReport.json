@@ -1,0 +1,35 @@
+{
+    "name": "AddressCheckReport",
+    "fields": [
+        {
+            "fieldName": "addressVerified",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idAuthVerifiedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addressVerifiedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addressVerifiedDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addressRemarks",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180730145440",
+    "entityTableName": "address_check_report",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,91 @@
+{
+    "name": "Transaction",
+    "fields": [
+        {
+            "fieldName": "generalnformation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addesses",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "statusDisplay",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "editable",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "editMode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "active",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cost",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "referenceId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "user",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "company",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdAt",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "statusNr",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "redirectUrl",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "consentForm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "localConsentForm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "valid",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "updatedAt",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "orders",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180730145416",
+    "entityTableName": "transaction",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

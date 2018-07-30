@@ -1,0 +1,44 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-directorship-verification-report-heading" jhiTranslate="pangeodataJHipsterApp.directorshipVerificationReport.home.createOrEditLabel">Create or edit a Directorship Verification Report</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!directorshipVerificationReport.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="directorshipVerificationReport.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.directorshipVerificationReport.directorshipVerified" for="field_directorshipVerified">Directorship Verified</label>
+                    <input type="text" class="form-control" name="directorshipVerified" id="field_directorshipVerified"
+                        [(ngModel)]="directorshipVerificationReport.directorshipVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.directorshipVerificationReport.directorshipFindings" for="field_directorshipFindings">Directorship Findings</label>
+                    <input type="text" class="form-control" name="directorshipFindings" id="field_directorshipFindings"
+                        [(ngModel)]="directorshipVerificationReport.directorshipFindings" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.directorshipVerificationReport.directorshipVerifiedBy" for="field_directorshipVerifiedBy">Directorship Verified By</label>
+                    <input type="text" class="form-control" name="directorshipVerifiedBy" id="field_directorshipVerifiedBy"
+                        [(ngModel)]="directorshipVerificationReport.directorshipVerifiedBy" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.directorshipVerificationReport.directorshipVerifiedDate" for="field_directorshipVerifiedDate">Directorship Verified Date</label>
+                    <input type="text" class="form-control" name="directorshipVerifiedDate" id="field_directorshipVerifiedDate"
+                        [(ngModel)]="directorshipVerificationReport.directorshipVerifiedDate" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

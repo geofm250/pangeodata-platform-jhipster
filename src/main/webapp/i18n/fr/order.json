@@ -1,0 +1,47 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "order" : {
+            "home": {
+                "title": "Orders",
+                "createLabel": "Créer un nouveau Order",
+                "createOrEditLabel": "Créer ou éditer un Order"
+            },
+            "created": "Un nouveau Order a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Order avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Order avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Order {{ id }} ?"
+            },
+            "detail": {
+                "title": "Order"
+            },
+            "files": "Files",
+            "reqInputs": "Req Inputs",
+            "reqFormInputs": "Req Form Inputs",
+            "product": "Product",
+            "transaction": "Transaction",
+            "user": "User",
+            "status": "Status",
+            "rejectReason": "Reject Reason",
+            "company": "Company",
+            "partner": "Partner",
+            "country": "Country",
+            "createdAt": "Created At",
+            "updatedAt": "Updated At",
+            "expectedDate": "Expected Date",
+            "dayTillComplete": "Day Till Complete",
+            "cost": "Cost",
+            "turnAroundTime": "Turn Around Time",
+            "report": "Report",
+            "refereneceId": "Referenece Id",
+            "cancellationReason": "Cancellation Reason",
+            "clientId": "Client Id",
+            "active": "Active",
+            "selected": "Selected",
+            "applicationId": "Application Id",
+            "applicationServiceIds": "Application Service Ids",
+            "iCoverReport": "I Cover Report"
+        }
+    }
+}

@@ -1,0 +1,70 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="pangeodataJHipsterApp.address.home.title">Addresses</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-address" [routerLink]="['/address/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="pangeodataJHipsterApp.address.home.createLabel">
+            Create new Address
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="addresses">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.address.current">Current</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.address.startDate">Start Date</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.address.country">Country</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.address.endDate">End Date</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.address.town">Town</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.address.address1">Address 1</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.address.address2">Address 2</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.address.postalCode">Postal Code</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.address.province">Province</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let address of addresses ;trackBy: trackId">
+                <td><a [routerLink]="['/address', address.id, 'view' ]">{{address.id}}</a></td>
+                <td>{{address.current}}</td>
+                <td>{{address.startDate}}</td>
+                <td>{{address.country}}</td>
+                <td>{{address.endDate}}</td>
+                <td>{{address.town}}</td>
+                <td>{{address.address1}}</td>
+                <td>{{address.address2}}</td>
+                <td>{{address.postalCode}}</td>
+                <td>{{address.province}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/address', address.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/address', address.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'address/'+ address.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

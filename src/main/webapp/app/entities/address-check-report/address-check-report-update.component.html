@@ -1,0 +1,49 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-address-check-report-heading" jhiTranslate="pangeodataJHipsterApp.addressCheckReport.home.createOrEditLabel">Create or edit a Address Check Report</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!addressCheckReport.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="addressCheckReport.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.addressCheckReport.addressVerified" for="field_addressVerified">Address Verified</label>
+                    <input type="text" class="form-control" name="addressVerified" id="field_addressVerified"
+                        [(ngModel)]="addressCheckReport.addressVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.addressCheckReport.idAuthVerifiedBy" for="field_idAuthVerifiedBy">Id Auth Verified By</label>
+                    <input type="text" class="form-control" name="idAuthVerifiedBy" id="field_idAuthVerifiedBy"
+                        [(ngModel)]="addressCheckReport.idAuthVerifiedBy" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.addressCheckReport.addressVerifiedBy" for="field_addressVerifiedBy">Address Verified By</label>
+                    <input type="text" class="form-control" name="addressVerifiedBy" id="field_addressVerifiedBy"
+                        [(ngModel)]="addressCheckReport.addressVerifiedBy" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.addressCheckReport.addressVerifiedDate" for="field_addressVerifiedDate">Address Verified Date</label>
+                    <input type="text" class="form-control" name="addressVerifiedDate" id="field_addressVerifiedDate"
+                        [(ngModel)]="addressCheckReport.addressVerifiedDate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.addressCheckReport.addressRemarks" for="field_addressRemarks">Address Remarks</label>
+                    <input type="text" class="form-control" name="addressRemarks" id="field_addressRemarks"
+                        [(ngModel)]="addressCheckReport.addressRemarks" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+{
+    "name": "OrderEmploymentForm",
+    "fields": [
+        {
+            "fieldName": "employerName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "managerName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "endingPay",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rehireEligibility",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "institutionLocalName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sourceWebsite",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sourcePhone",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sourceEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "present",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "employmentStartDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "employmentEndDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "endingPosition",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "startingPosition",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "startingPay",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "street",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "postalCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "reasonForLeaving",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "notes",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180730145433",
+    "entityTableName": "order_employment_form",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

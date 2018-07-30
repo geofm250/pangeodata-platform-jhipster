@@ -1,0 +1,31 @@
+{
+    "name": "PassportCheckReport",
+    "fields": [
+        {
+            "fieldName": "passportVerified",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "documentAuthenticityVerifiedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "documentAuthenticityVerifiedDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "documentAuthenticityRemarks",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180730145449",
+    "entityTableName": "passport_check_report",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

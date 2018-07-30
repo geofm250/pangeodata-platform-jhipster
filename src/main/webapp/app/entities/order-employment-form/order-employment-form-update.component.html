@@ -1,0 +1,114 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-order-employment-form-heading" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.home.createOrEditLabel">Create or edit a Order Employment Form</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!orderEmploymentForm.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="orderEmploymentForm.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.employerName" for="field_employerName">Employer Name</label>
+                    <input type="text" class="form-control" name="employerName" id="field_employerName"
+                        [(ngModel)]="orderEmploymentForm.employerName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.managerName" for="field_managerName">Manager Name</label>
+                    <input type="text" class="form-control" name="managerName" id="field_managerName"
+                        [(ngModel)]="orderEmploymentForm.managerName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.endingPay" for="field_endingPay">Ending Pay</label>
+                    <input type="text" class="form-control" name="endingPay" id="field_endingPay"
+                        [(ngModel)]="orderEmploymentForm.endingPay" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.rehireEligibility" for="field_rehireEligibility">Rehire Eligibility</label>
+                    <input type="text" class="form-control" name="rehireEligibility" id="field_rehireEligibility"
+                        [(ngModel)]="orderEmploymentForm.rehireEligibility" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.institutionLocalName" for="field_institutionLocalName">Institution Local Name</label>
+                    <input type="text" class="form-control" name="institutionLocalName" id="field_institutionLocalName"
+                        [(ngModel)]="orderEmploymentForm.institutionLocalName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.sourceWebsite" for="field_sourceWebsite">Source Website</label>
+                    <input type="text" class="form-control" name="sourceWebsite" id="field_sourceWebsite"
+                        [(ngModel)]="orderEmploymentForm.sourceWebsite" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.sourcePhone" for="field_sourcePhone">Source Phone</label>
+                    <input type="text" class="form-control" name="sourcePhone" id="field_sourcePhone"
+                        [(ngModel)]="orderEmploymentForm.sourcePhone" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.sourceEmail" for="field_sourceEmail">Source Email</label>
+                    <input type="text" class="form-control" name="sourceEmail" id="field_sourceEmail"
+                        [(ngModel)]="orderEmploymentForm.sourceEmail" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.present" for="field_present">Present</label>
+                    <input type="text" class="form-control" name="present" id="field_present"
+                        [(ngModel)]="orderEmploymentForm.present" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.employmentStartDate" for="field_employmentStartDate">Employment Start Date</label>
+                    <input type="text" class="form-control" name="employmentStartDate" id="field_employmentStartDate"
+                        [(ngModel)]="orderEmploymentForm.employmentStartDate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.employmentEndDate" for="field_employmentEndDate">Employment End Date</label>
+                    <input type="text" class="form-control" name="employmentEndDate" id="field_employmentEndDate"
+                        [(ngModel)]="orderEmploymentForm.employmentEndDate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.endingPosition" for="field_endingPosition">Ending Position</label>
+                    <input type="text" class="form-control" name="endingPosition" id="field_endingPosition"
+                        [(ngModel)]="orderEmploymentForm.endingPosition" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.startingPosition" for="field_startingPosition">Starting Position</label>
+                    <input type="text" class="form-control" name="startingPosition" id="field_startingPosition"
+                        [(ngModel)]="orderEmploymentForm.startingPosition" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.startingPay" for="field_startingPay">Starting Pay</label>
+                    <input type="text" class="form-control" name="startingPay" id="field_startingPay"
+                        [(ngModel)]="orderEmploymentForm.startingPay" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.street" for="field_street">Street</label>
+                    <input type="text" class="form-control" name="street" id="field_street"
+                        [(ngModel)]="orderEmploymentForm.street" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.postalCode" for="field_postalCode">Postal Code</label>
+                    <input type="text" class="form-control" name="postalCode" id="field_postalCode"
+                        [(ngModel)]="orderEmploymentForm.postalCode" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.reasonForLeaving" for="field_reasonForLeaving">Reason For Leaving</label>
+                    <input type="text" class="form-control" name="reasonForLeaving" id="field_reasonForLeaving"
+                        [(ngModel)]="orderEmploymentForm.reasonForLeaving" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEmploymentForm.notes" for="field_notes">Notes</label>
+                    <input type="text" class="form-control" name="notes" id="field_notes"
+                        [(ngModel)]="orderEmploymentForm.notes" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

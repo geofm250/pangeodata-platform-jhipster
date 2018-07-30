@@ -1,0 +1,124 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-order-education-form-heading" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.home.createOrEditLabel">Create or edit a Order Education Form</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!orderEducationForm.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="orderEducationForm.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.typeDiploma" for="field_typeDiploma">Type Diploma</label>
+                    <input type="text" class="form-control" name="typeDiploma" id="field_typeDiploma"
+                        [(ngModel)]="orderEducationForm.typeDiploma" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.nameOfInstitution" for="field_nameOfInstitution">Name Of Institution</label>
+                    <input type="text" class="form-control" name="nameOfInstitution" id="field_nameOfInstitution"
+                        [(ngModel)]="orderEducationForm.nameOfInstitution" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.institutionLocalName" for="field_institutionLocalName">Institution Local Name</label>
+                    <input type="text" class="form-control" name="institutionLocalName" id="field_institutionLocalName"
+                        [(ngModel)]="orderEducationForm.institutionLocalName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.subject" for="field_subject">Subject</label>
+                    <input type="text" class="form-control" name="subject" id="field_subject"
+                        [(ngModel)]="orderEducationForm.subject" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.performance" for="field_performance">Performance</label>
+                    <input type="text" class="form-control" name="performance" id="field_performance"
+                        [(ngModel)]="orderEducationForm.performance" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.typeOfInstitution" for="field_typeOfInstitution">Type Of Institution</label>
+                    <input type="text" class="form-control" name="typeOfInstitution" id="field_typeOfInstitution"
+                        [(ngModel)]="orderEducationForm.typeOfInstitution" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.sourceWebsite" for="field_sourceWebsite">Source Website</label>
+                    <input type="text" class="form-control" name="sourceWebsite" id="field_sourceWebsite"
+                        [(ngModel)]="orderEducationForm.sourceWebsite" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.sourceName" for="field_sourceName">Source Name</label>
+                    <input type="text" class="form-control" name="sourceName" id="field_sourceName"
+                        [(ngModel)]="orderEducationForm.sourceName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.sourcePhone" for="field_sourcePhone">Source Phone</label>
+                    <input type="text" class="form-control" name="sourcePhone" id="field_sourcePhone"
+                        [(ngModel)]="orderEducationForm.sourcePhone" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.sourceEmail" for="field_sourceEmail">Source Email</label>
+                    <input type="text" class="form-control" name="sourceEmail" id="field_sourceEmail"
+                        [(ngModel)]="orderEducationForm.sourceEmail" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.present" for="field_present">Present</label>
+                    <input type="text" class="form-control" name="present" id="field_present"
+                        [(ngModel)]="orderEducationForm.present" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.attendanceStartDate" for="field_attendanceStartDate">Attendance Start Date</label>
+                    <input type="text" class="form-control" name="attendanceStartDate" id="field_attendanceStartDate"
+                        [(ngModel)]="orderEducationForm.attendanceStartDate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.attendanceEndDate" for="field_attendanceEndDate">Attendance End Date</label>
+                    <input type="text" class="form-control" name="attendanceEndDate" id="field_attendanceEndDate"
+                        [(ngModel)]="orderEducationForm.attendanceEndDate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.diplomaAwardDate" for="field_diplomaAwardDate">Diploma Award Date</label>
+                    <input type="text" class="form-control" name="diplomaAwardDate" id="field_diplomaAwardDate"
+                        [(ngModel)]="orderEducationForm.diplomaAwardDate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.studentRegistrationNo" for="field_studentRegistrationNo">Student Registration No</label>
+                    <input type="text" class="form-control" name="studentRegistrationNo" id="field_studentRegistrationNo"
+                        [(ngModel)]="orderEducationForm.studentRegistrationNo" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.town" for="field_town">Town</label>
+                    <input type="text" class="form-control" name="town" id="field_town"
+                        [(ngModel)]="orderEducationForm.town" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.state" for="field_state">State</label>
+                    <input type="text" class="form-control" name="state" id="field_state"
+                        [(ngModel)]="orderEducationForm.state" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.country" for="field_country">Country</label>
+                    <input type="text" class="form-control" name="country" id="field_country"
+                        [(ngModel)]="orderEducationForm.country" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.postalCode" for="field_postalCode">Postal Code</label>
+                    <input type="text" class="form-control" name="postalCode" id="field_postalCode"
+                        [(ngModel)]="orderEducationForm.postalCode" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.orderEducationForm.notes" for="field_notes">Notes</label>
+                    <input type="text" class="form-control" name="notes" id="field_notes"
+                        [(ngModel)]="orderEducationForm.notes" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

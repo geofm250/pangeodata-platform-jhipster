@@ -1,0 +1,23 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "iCoverName" : {
+            "home": {
+                "title": "I Cover Names",
+                "createLabel": "Create a new I Cover Name",
+                "createOrEditLabel": "Create or edit a I Cover Name"
+            },
+            "created": "A new I Cover Name is created with identifier {{ param }}",
+            "updated": "A I Cover Name is updated with identifier {{ param }}",
+            "deleted": "A I Cover Name is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete I Cover Name {{ id }}?"
+            },
+            "detail": {
+                "title": "I Cover Name"
+            },
+            "name": "Name",
+            "requirementId": "Requirement Id"
+        }
+    }
+}

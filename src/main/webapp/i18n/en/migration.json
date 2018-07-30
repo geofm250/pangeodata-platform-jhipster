@@ -1,0 +1,23 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "migration" : {
+            "home": {
+                "title": "Migrations",
+                "createLabel": "Create a new Migration",
+                "createOrEditLabel": "Create or edit a Migration"
+            },
+            "created": "A new Migration is created with identifier {{ param }}",
+            "updated": "A Migration is updated with identifier {{ param }}",
+            "deleted": "A Migration is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Migration {{ id }}?"
+            },
+            "detail": {
+                "title": "Migration"
+            },
+            "description": "Description",
+            "version": "Version"
+        }
+    }
+}

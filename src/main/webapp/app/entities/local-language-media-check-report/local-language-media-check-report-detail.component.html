@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="localLanguageMediaCheckReport">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.localLanguageMediaCheckReport.detail.title">Local Language Media Check Report</span> {{localLanguageMediaCheckReport.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.localLanguageMediaCheckReport.localLanguageMediaFindings">Local Language Media Findings</span></dt>
+                <dd>
+                    <span>{{localLanguageMediaCheckReport.localLanguageMediaFindings}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.localLanguageMediaCheckReport.localLanguageMediaStatus">Local Language Media Status</span></dt>
+                <dd>
+                    <span>{{localLanguageMediaCheckReport.localLanguageMediaStatus}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.localLanguageMediaCheckReport.localLanguageMediaVerifiedDate">Local Language Media Verified Date</span></dt>
+                <dd>
+                    <span>{{localLanguageMediaCheckReport.localLanguageMediaVerifiedDate}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/local-language-media-check-report', localLanguageMediaCheckReport.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

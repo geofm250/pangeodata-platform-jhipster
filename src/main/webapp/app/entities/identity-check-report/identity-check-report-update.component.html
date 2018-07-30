@@ -1,0 +1,44 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-identity-check-report-heading" jhiTranslate="pangeodataJHipsterApp.identityCheckReport.home.createOrEditLabel">Create or edit a Identity Check Report</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!identityCheckReport.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="identityCheckReport.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.identityCheckReport.idVerified" for="field_idVerified">Id Verified</label>
+                    <input type="text" class="form-control" name="idVerified" id="field_idVerified"
+                        [(ngModel)]="identityCheckReport.idVerified" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.identityCheckReport.idAuthVerifiedBy" for="field_idAuthVerifiedBy">Id Auth Verified By</label>
+                    <input type="text" class="form-control" name="idAuthVerifiedBy" id="field_idAuthVerifiedBy"
+                        [(ngModel)]="identityCheckReport.idAuthVerifiedBy" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.identityCheckReport.idVerifiedDate" for="field_idVerifiedDate">Id Verified Date</label>
+                    <input type="text" class="form-control" name="idVerifiedDate" id="field_idVerifiedDate"
+                        [(ngModel)]="identityCheckReport.idVerifiedDate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.identityCheckReport.idRemarks" for="field_idRemarks">Id Remarks</label>
+                    <input type="text" class="form-control" name="idRemarks" id="field_idRemarks"
+                        [(ngModel)]="identityCheckReport.idRemarks" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

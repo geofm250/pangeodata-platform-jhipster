@@ -1,0 +1,28 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "orderFile" : {
+            "home": {
+                "title": "Order Files",
+                "createLabel": "Create a new Order File",
+                "createOrEditLabel": "Create or edit a Order File"
+            },
+            "created": "A new Order File is created with identifier {{ param }}",
+            "updated": "A Order File is updated with identifier {{ param }}",
+            "deleted": "A Order File is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Order File {{ id }}?"
+            },
+            "detail": {
+                "title": "Order File"
+            },
+            "name": "Name",
+            "localFiles": "Local Files",
+            "files": "Files",
+            "links": "Links",
+            "displayLinks": "Display Links",
+            "iCoverName": "I Cover Name",
+            "orderId": "Order Id"
+        }
+    }
+}
