@@ -1,0 +1,25 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "reportedCriminalActivityCheck" : {
+            "home": {
+                "title": "ReportedCriminalActivityChecks",
+                "createLabel": "Créer un nouveau Reported Criminal Activity Check",
+                "createOrEditLabel": "Créer ou éditer un Reported Criminal Activity Check"
+            },
+            "created": "Un nouveau Reported Criminal Activity Check a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Reported Criminal Activity Check avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Reported Criminal Activity Check avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Reported Criminal Activity Check {{ id }} ?"
+            },
+            "detail": {
+                "title": "Reported Criminal Activity Check"
+            },
+            "reportedCriminalActivityRecordFound": "Reported Criminal Activity Record Found",
+            "reportedCriminalActivityVerifiedBy": "Reported Criminal Activity Verified By",
+            "reportedCriminalActivityVerifiedDate": "Reported Criminal Activity Verified Date",
+            "reportedCriminalActivityRemarks": "Reported Criminal Activity Remarks"
+        }
+    }
+}

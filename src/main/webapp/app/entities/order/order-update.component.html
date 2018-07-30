@@ -1,0 +1,154 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-order-heading" jhiTranslate="pangeodataJHipsterApp.order.home.createOrEditLabel">Create or edit a Order</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!order.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="order.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.files" for="field_files">Files</label>
+                    <input type="text" class="form-control" name="files" id="field_files"
+                        [(ngModel)]="order.files" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.reqInputs" for="field_reqInputs">Req Inputs</label>
+                    <input type="text" class="form-control" name="reqInputs" id="field_reqInputs"
+                        [(ngModel)]="order.reqInputs" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.reqFormInputs" for="field_reqFormInputs">Req Form Inputs</label>
+                    <input type="text" class="form-control" name="reqFormInputs" id="field_reqFormInputs"
+                        [(ngModel)]="order.reqFormInputs" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.product" for="field_product">Product</label>
+                    <input type="text" class="form-control" name="product" id="field_product"
+                        [(ngModel)]="order.product" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.transaction" for="field_transaction">Transaction</label>
+                    <input type="text" class="form-control" name="transaction" id="field_transaction"
+                        [(ngModel)]="order.transaction" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.user" for="field_user">User</label>
+                    <input type="text" class="form-control" name="user" id="field_user"
+                        [(ngModel)]="order.user" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.status" for="field_status">Status</label>
+                    <input type="text" class="form-control" name="status" id="field_status"
+                        [(ngModel)]="order.status" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.rejectReason" for="field_rejectReason">Reject Reason</label>
+                    <input type="text" class="form-control" name="rejectReason" id="field_rejectReason"
+                        [(ngModel)]="order.rejectReason" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.company" for="field_company">Company</label>
+                    <input type="text" class="form-control" name="company" id="field_company"
+                        [(ngModel)]="order.company" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.partner" for="field_partner">Partner</label>
+                    <input type="text" class="form-control" name="partner" id="field_partner"
+                        [(ngModel)]="order.partner" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.country" for="field_country">Country</label>
+                    <input type="text" class="form-control" name="country" id="field_country"
+                        [(ngModel)]="order.country" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.createdAt" for="field_createdAt">Created At</label>
+                    <input type="text" class="form-control" name="createdAt" id="field_createdAt"
+                        [(ngModel)]="order.createdAt" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.updatedAt" for="field_updatedAt">Updated At</label>
+                    <input type="text" class="form-control" name="updatedAt" id="field_updatedAt"
+                        [(ngModel)]="order.updatedAt" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.expectedDate" for="field_expectedDate">Expected Date</label>
+                    <input type="text" class="form-control" name="expectedDate" id="field_expectedDate"
+                        [(ngModel)]="order.expectedDate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.dayTillComplete" for="field_dayTillComplete">Day Till Complete</label>
+                    <input type="text" class="form-control" name="dayTillComplete" id="field_dayTillComplete"
+                        [(ngModel)]="order.dayTillComplete" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.cost" for="field_cost">Cost</label>
+                    <input type="text" class="form-control" name="cost" id="field_cost"
+                        [(ngModel)]="order.cost" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.turnAroundTime" for="field_turnAroundTime">Turn Around Time</label>
+                    <input type="text" class="form-control" name="turnAroundTime" id="field_turnAroundTime"
+                        [(ngModel)]="order.turnAroundTime" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.report" for="field_report">Report</label>
+                    <input type="text" class="form-control" name="report" id="field_report"
+                        [(ngModel)]="order.report" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.refereneceId" for="field_refereneceId">Referenece Id</label>
+                    <input type="text" class="form-control" name="refereneceId" id="field_refereneceId"
+                        [(ngModel)]="order.refereneceId" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.cancellationReason" for="field_cancellationReason">Cancellation Reason</label>
+                    <input type="text" class="form-control" name="cancellationReason" id="field_cancellationReason"
+                        [(ngModel)]="order.cancellationReason" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.clientId" for="field_clientId">Client Id</label>
+                    <input type="text" class="form-control" name="clientId" id="field_clientId"
+                        [(ngModel)]="order.clientId" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.active" for="field_active">Active</label>
+                    <input type="text" class="form-control" name="active" id="field_active"
+                        [(ngModel)]="order.active" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.selected" for="field_selected">Selected</label>
+                    <input type="text" class="form-control" name="selected" id="field_selected"
+                        [(ngModel)]="order.selected" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.applicationId" for="field_applicationId">Application Id</label>
+                    <input type="text" class="form-control" name="applicationId" id="field_applicationId"
+                        [(ngModel)]="order.applicationId" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.applicationServiceIds" for="field_applicationServiceIds">Application Service Ids</label>
+                    <input type="text" class="form-control" name="applicationServiceIds" id="field_applicationServiceIds"
+                        [(ngModel)]="order.applicationServiceIds" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.order.iCoverReport" for="field_iCoverReport">I Cover Report</label>
+                    <input type="text" class="form-control" name="iCoverReport" id="field_iCoverReport"
+                        [(ngModel)]="order.iCoverReport" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

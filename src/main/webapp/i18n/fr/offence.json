@@ -1,0 +1,27 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "offence" : {
+            "home": {
+                "title": "Offences",
+                "createLabel": "Créer un nouveau Offence",
+                "createOrEditLabel": "Créer ou éditer un Offence"
+            },
+            "created": "Un nouveau Offence a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Offence avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Offence avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Offence {{ id }} ?"
+            },
+            "detail": {
+                "title": "Offence"
+            },
+            "offence": "Offence",
+            "offenceDate": "Offence Date",
+            "sentence": "Sentence",
+            "verifiedBy": "Verified By",
+            "verifiedDate": "Verified Date",
+            "remarks": "Remarks"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "orderProfessionalLicenseForm" : {
+            "home": {
+                "title": "Order Professional License Forms",
+                "createLabel": "Create a new Order Professional License Form",
+                "createOrEditLabel": "Create or edit a Order Professional License Form"
+            },
+            "created": "A new Order Professional License Form is created with identifier {{ param }}",
+            "updated": "A Order Professional License Form is updated with identifier {{ param }}",
+            "deleted": "A Order Professional License Form is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Order Professional License Form {{ id }}?"
+            },
+            "detail": {
+                "title": "Order Professional License Form"
+            },
+            "nameOfLicense": "Name Of License",
+            "town": "Town",
+            "licenseInstitution": "License Institution"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="orderInput">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.orderInput.detail.title">Order Input</span> {{orderInput.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderInput.name">Name</span></dt>
+                <dd>
+                    <span>{{orderInput.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderInput.orderId">Order Id</span></dt>
+                <dd>
+                    <span>{{orderInput.orderId}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderInput.label">Label</span></dt>
+                <dd>
+                    <span>{{orderInput.label}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderInput.input">Input</span></dt>
+                <dd>
+                    <span>{{orderInput.input}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.orderInput.iCoverName">I Cover Name</span></dt>
+                <dd>
+                    <span>{{orderInput.iCoverName}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/order-input', orderInput.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

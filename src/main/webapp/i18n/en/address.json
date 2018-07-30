@@ -1,0 +1,30 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "address" : {
+            "home": {
+                "title": "Addresses",
+                "createLabel": "Create a new Address",
+                "createOrEditLabel": "Create or edit a Address"
+            },
+            "created": "A new Address is created with identifier {{ param }}",
+            "updated": "A Address is updated with identifier {{ param }}",
+            "deleted": "A Address is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Address {{ id }}?"
+            },
+            "detail": {
+                "title": "Address"
+            },
+            "current": "Current",
+            "startDate": "Start Date",
+            "country": "Country",
+            "endDate": "End Date",
+            "town": "Town",
+            "address1": "Address 1",
+            "address2": "Address 2",
+            "postalCode": "Postal Code",
+            "province": "Province"
+        }
+    }
+}

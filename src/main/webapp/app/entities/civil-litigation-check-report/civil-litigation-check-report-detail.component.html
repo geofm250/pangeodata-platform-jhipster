@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="civilLitigationCheckReport">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.civilLitigationCheckReport.detail.title">Civil Litigation Check Report</span> {{civilLitigationCheckReport.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.civilLitigationCheckReport.civilRecordFound">Civil Record Found</span></dt>
+                <dd>
+                    <span>{{civilLitigationCheckReport.civilRecordFound}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.civilLitigationCheckReport.civilFindings">Civil Findings</span></dt>
+                <dd>
+                    <span>{{civilLitigationCheckReport.civilFindings}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.civilLitigationCheckReport.civilVerifiedBy">Civil Verified By</span></dt>
+                <dd>
+                    <span>{{civilLitigationCheckReport.civilVerifiedBy}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.civilLitigationCheckReport.civilVerifiedDate">Civil Verified Date</span></dt>
+                <dd>
+                    <span>{{civilLitigationCheckReport.civilVerifiedDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.civilLitigationCheckReport.civilRemarks">Civil Remarks</span></dt>
+                <dd>
+                    <span>{{civilLitigationCheckReport.civilRemarks}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/civil-litigation-check-report', civilLitigationCheckReport.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

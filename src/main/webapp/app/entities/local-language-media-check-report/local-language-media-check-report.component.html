@@ -1,0 +1,58 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="pangeodataJHipsterApp.localLanguageMediaCheckReport.home.title">Local Language Media Check Reports</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-local-language-media-check-report" [routerLink]="['/local-language-media-check-report/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="pangeodataJHipsterApp.localLanguageMediaCheckReport.home.createLabel">
+            Create new Local Language Media Check Report
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="localLanguageMediaCheckReports">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.localLanguageMediaCheckReport.localLanguageMediaFindings">Local Language Media Findings</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.localLanguageMediaCheckReport.localLanguageMediaStatus">Local Language Media Status</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.localLanguageMediaCheckReport.localLanguageMediaVerifiedDate">Local Language Media Verified Date</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let localLanguageMediaCheckReport of localLanguageMediaCheckReports ;trackBy: trackId">
+                <td><a [routerLink]="['/local-language-media-check-report', localLanguageMediaCheckReport.id, 'view' ]">{{localLanguageMediaCheckReport.id}}</a></td>
+                <td>{{localLanguageMediaCheckReport.localLanguageMediaFindings}}</td>
+                <td>{{localLanguageMediaCheckReport.localLanguageMediaStatus}}</td>
+                <td>{{localLanguageMediaCheckReport.localLanguageMediaVerifiedDate}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/local-language-media-check-report', localLanguageMediaCheckReport.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/local-language-media-check-report', localLanguageMediaCheckReport.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'local-language-media-check-report/'+ localLanguageMediaCheckReport.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="driversLicenseCheckReport">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.driversLicenseCheckReport.detail.title">Drivers License Check Report</span> {{driversLicenseCheckReport.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.driversLicenseCheckReport.driversLicenseVerified">Drivers License Verified</span></dt>
+                <dd>
+                    <span>{{driversLicenseCheckReport.driversLicenseVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.driversLicenseCheckReport.driversLicenseNumber">Drivers License Number</span></dt>
+                <dd>
+                    <span>{{driversLicenseCheckReport.driversLicenseNumber}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.driversLicenseCheckReport.driversLicenseStatus">Drivers License Status</span></dt>
+                <dd>
+                    <span>{{driversLicenseCheckReport.driversLicenseStatus}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.driversLicenseCheckReport.driverLicenseVerifiedBy">Driver License Verified By</span></dt>
+                <dd>
+                    <span>{{driversLicenseCheckReport.driverLicenseVerifiedBy}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.driversLicenseCheckReport.driversLicenseVerifiedDate">Drivers License Verified Date</span></dt>
+                <dd>
+                    <span>{{driversLicenseCheckReport.driversLicenseVerifiedDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.driversLicenseCheckReport.driversLicenseRemarks">Drivers License Remarks</span></dt>
+                <dd>
+                    <span>{{driversLicenseCheckReport.driversLicenseRemarks}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/drivers-license-check-report', driversLicenseCheckReport.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

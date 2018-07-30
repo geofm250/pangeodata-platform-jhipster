@@ -1,0 +1,49 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-civil-litigation-check-report-heading" jhiTranslate="pangeodataJHipsterApp.civilLitigationCheckReport.home.createOrEditLabel">Create or edit a Civil Litigation Check Report</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!civilLitigationCheckReport.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="civilLitigationCheckReport.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.civilLitigationCheckReport.civilRecordFound" for="field_civilRecordFound">Civil Record Found</label>
+                    <input type="text" class="form-control" name="civilRecordFound" id="field_civilRecordFound"
+                        [(ngModel)]="civilLitigationCheckReport.civilRecordFound" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.civilLitigationCheckReport.civilFindings" for="field_civilFindings">Civil Findings</label>
+                    <input type="text" class="form-control" name="civilFindings" id="field_civilFindings"
+                        [(ngModel)]="civilLitigationCheckReport.civilFindings" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.civilLitigationCheckReport.civilVerifiedBy" for="field_civilVerifiedBy">Civil Verified By</label>
+                    <input type="text" class="form-control" name="civilVerifiedBy" id="field_civilVerifiedBy"
+                        [(ngModel)]="civilLitigationCheckReport.civilVerifiedBy" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.civilLitigationCheckReport.civilVerifiedDate" for="field_civilVerifiedDate">Civil Verified Date</label>
+                    <input type="text" class="form-control" name="civilVerifiedDate" id="field_civilVerifiedDate"
+                        [(ngModel)]="civilLitigationCheckReport.civilVerifiedDate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.civilLitigationCheckReport.civilRemarks" for="field_civilRemarks">Civil Remarks</label>
+                    <input type="text" class="form-control" name="civilRemarks" id="field_civilRemarks"
+                        [(ngModel)]="civilLitigationCheckReport.civilRemarks" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

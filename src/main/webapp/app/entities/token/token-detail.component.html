@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="token">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.token.detail.title">Token</span> {{token.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.token.createdAt">Created At</span></dt>
+                <dd>
+                    <span>{{token.createdAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.token.expiredAt">Expired At</span></dt>
+                <dd>
+                    <span>{{token.expiredAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.token.userId">User Id</span></dt>
+                <dd>
+                    <span>{{token.userId}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.token.token">Token</span></dt>
+                <dd>
+                    <span>{{token.token}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/token', token.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

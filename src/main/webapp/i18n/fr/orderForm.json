@@ -1,0 +1,25 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "orderForm" : {
+            "home": {
+                "title": "OrderForms",
+                "createLabel": "Créer un nouveau Order Form",
+                "createOrEditLabel": "Créer ou éditer un Order Form"
+            },
+            "created": "Un nouveau Order Form a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Order Form avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Order Form avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Order Form {{ id }} ?"
+            },
+            "detail": {
+                "title": "Order Form"
+            },
+            "formType": "Form Type",
+            "input": "Input",
+            "valid": "Valid",
+            "name": "Name"
+        }
+    }
+}

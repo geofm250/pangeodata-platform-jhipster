@@ -1,0 +1,44 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-bankruptcy-check-report-heading" jhiTranslate="pangeodataJHipsterApp.bankruptcyCheckReport.home.createOrEditLabel">Create or edit a Bankruptcy Check Report</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!bankruptcyCheckReport.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="bankruptcyCheckReport.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.bankruptcyCheckReport.bankruptcyFindings" for="field_bankruptcyFindings">Bankruptcy Findings</label>
+                    <input type="text" class="form-control" name="bankruptcyFindings" id="field_bankruptcyFindings"
+                        [(ngModel)]="bankruptcyCheckReport.bankruptcyFindings" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.bankruptcyCheckReport.bankruptcyVerifiedBy" for="field_bankruptcyVerifiedBy">Bankruptcy Verified By</label>
+                    <input type="text" class="form-control" name="bankruptcyVerifiedBy" id="field_bankruptcyVerifiedBy"
+                        [(ngModel)]="bankruptcyCheckReport.bankruptcyVerifiedBy" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.bankruptcyCheckReport.bankruptcyVerifiedDate" for="field_bankruptcyVerifiedDate">Bankruptcy Verified Date</label>
+                    <input type="text" class="form-control" name="bankruptcyVerifiedDate" id="field_bankruptcyVerifiedDate"
+                        [(ngModel)]="bankruptcyCheckReport.bankruptcyVerifiedDate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="pangeodataJHipsterApp.bankruptcyCheckReport.bankruptcyRemarks" for="field_bankruptcyRemarks">Bankruptcy Remarks</label>
+                    <input type="text" class="form-control" name="bankruptcyRemarks" id="field_bankruptcyRemarks"
+                        [(ngModel)]="bankruptcyCheckReport.bankruptcyRemarks" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

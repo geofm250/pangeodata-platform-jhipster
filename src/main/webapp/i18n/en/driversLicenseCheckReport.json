@@ -1,0 +1,27 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "driversLicenseCheckReport" : {
+            "home": {
+                "title": "Drivers License Check Reports",
+                "createLabel": "Create a new Drivers License Check Report",
+                "createOrEditLabel": "Create or edit a Drivers License Check Report"
+            },
+            "created": "A new Drivers License Check Report is created with identifier {{ param }}",
+            "updated": "A Drivers License Check Report is updated with identifier {{ param }}",
+            "deleted": "A Drivers License Check Report is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Drivers License Check Report {{ id }}?"
+            },
+            "detail": {
+                "title": "Drivers License Check Report"
+            },
+            "driversLicenseVerified": "Drivers License Verified",
+            "driversLicenseNumber": "Drivers License Number",
+            "driversLicenseStatus": "Drivers License Status",
+            "driverLicenseVerifiedBy": "Driver License Verified By",
+            "driversLicenseVerifiedDate": "Drivers License Verified Date",
+            "driversLicenseRemarks": "Drivers License Remarks"
+        }
+    }
+}

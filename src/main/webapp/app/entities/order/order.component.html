@@ -1,0 +1,104 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="pangeodataJHipsterApp.order.home.title">Orders</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-order" [routerLink]="['/order/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="pangeodataJHipsterApp.order.home.createLabel">
+            Create new Order
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="orders">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.files">Files</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.reqInputs">Req Inputs</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.reqFormInputs">Req Form Inputs</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.product">Product</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.transaction">Transaction</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.user">User</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.status">Status</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.rejectReason">Reject Reason</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.company">Company</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.partner">Partner</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.country">Country</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.createdAt">Created At</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.updatedAt">Updated At</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.expectedDate">Expected Date</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.dayTillComplete">Day Till Complete</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.cost">Cost</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.turnAroundTime">Turn Around Time</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.report">Report</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.refereneceId">Referenece Id</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.cancellationReason">Cancellation Reason</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.clientId">Client Id</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.active">Active</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.selected">Selected</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.applicationId">Application Id</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.applicationServiceIds">Application Service Ids</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.order.iCoverReport">I Cover Report</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let order of orders ;trackBy: trackId">
+                <td><a [routerLink]="['/order', order.id, 'view' ]">{{order.id}}</a></td>
+                <td>{{order.files}}</td>
+                <td>{{order.reqInputs}}</td>
+                <td>{{order.reqFormInputs}}</td>
+                <td>{{order.product}}</td>
+                <td>{{order.transaction}}</td>
+                <td>{{order.user}}</td>
+                <td>{{order.status}}</td>
+                <td>{{order.rejectReason}}</td>
+                <td>{{order.company}}</td>
+                <td>{{order.partner}}</td>
+                <td>{{order.country}}</td>
+                <td>{{order.createdAt}}</td>
+                <td>{{order.updatedAt}}</td>
+                <td>{{order.expectedDate}}</td>
+                <td>{{order.dayTillComplete}}</td>
+                <td>{{order.cost}}</td>
+                <td>{{order.turnAroundTime}}</td>
+                <td>{{order.report}}</td>
+                <td>{{order.refereneceId}}</td>
+                <td>{{order.cancellationReason}}</td>
+                <td>{{order.clientId}}</td>
+                <td>{{order.active}}</td>
+                <td>{{order.selected}}</td>
+                <td>{{order.applicationId}}</td>
+                <td>{{order.applicationServiceIds}}</td>
+                <td>{{order.iCoverReport}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/order', order.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/order', order.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'order/'+ order.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

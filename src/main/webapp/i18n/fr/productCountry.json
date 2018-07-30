@@ -1,0 +1,24 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "productCountry" : {
+            "home": {
+                "title": "ProductCountries",
+                "createLabel": "Créer un nouveau Product Country",
+                "createOrEditLabel": "Créer ou éditer un Product Country"
+            },
+            "created": "Un nouveau Product Country a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Product Country avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Product Country avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Product Country {{ id }} ?"
+            },
+            "detail": {
+                "title": "Product Country"
+            },
+            "turnAroundTime": "Turn Around Time",
+            "country": "Country",
+            "cost": "Cost"
+        }
+    }
+}

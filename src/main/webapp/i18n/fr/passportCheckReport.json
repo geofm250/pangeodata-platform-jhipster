@@ -1,0 +1,25 @@
+
+{
+    "pangeodataJHipsterApp": {
+        "passportCheckReport" : {
+            "home": {
+                "title": "PassportCheckReports",
+                "createLabel": "Créer un nouveau Passport Check Report",
+                "createOrEditLabel": "Créer ou éditer un Passport Check Report"
+            },
+            "created": "Un nouveau Passport Check Report a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Passport Check Report avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Passport Check Report avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Passport Check Report {{ id }} ?"
+            },
+            "detail": {
+                "title": "Passport Check Report"
+            },
+            "passportVerified": "Passport Verified",
+            "documentAuthenticityVerifiedBy": "Document Authenticity Verified By",
+            "documentAuthenticityVerifiedDate": "Document Authenticity Verified Date",
+            "documentAuthenticityRemarks": "Document Authenticity Remarks"
+        }
+    }
+}

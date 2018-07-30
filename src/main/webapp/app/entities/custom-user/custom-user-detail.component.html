@@ -1,0 +1,79 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="customUser">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.customUser.detail.title">Custom User</span> {{customUser.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.firstname">Firstname</span></dt>
+                <dd>
+                    <span>{{customUser.firstname}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.lastname">Lastname</span></dt>
+                <dd>
+                    <span>{{customUser.lastname}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.username">Username</span></dt>
+                <dd>
+                    <span>{{customUser.username}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.email">Email</span></dt>
+                <dd>
+                    <span>{{customUser.email}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.role">Role</span></dt>
+                <dd>
+                    <span>{{customUser.role}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.company">Company</span></dt>
+                <dd>
+                    <span>{{customUser.company}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.name">Name</span></dt>
+                <dd>
+                    <span>{{customUser.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.surname">Surname</span></dt>
+                <dd>
+                    <span>{{customUser.surname}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.password">Password</span></dt>
+                <dd>
+                    <span>{{customUser.password}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.active">Active</span></dt>
+                <dd>
+                    <span>{{customUser.active}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.createdAt">Created At</span></dt>
+                <dd>
+                    <span>{{customUser.createdAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.updatedAt">Updated At</span></dt>
+                <dd>
+                    <span>{{customUser.updatedAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.isTokenLogin">Is Token Login</span></dt>
+                <dd>
+                    <span>{{customUser.isTokenLogin}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.customUser.orderId">Order Id</span></dt>
+                <dd>
+                    <span>{{customUser.orderId}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/custom-user', customUser.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

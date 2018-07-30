@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="referenceCheckReport">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.referenceCheckReport.detail.title">Reference Check Report</span> {{referenceCheckReport.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.referenceCheckReport.nameOfReference">Name Of Reference</span></dt>
+                <dd>
+                    <span>{{referenceCheckReport.nameOfReference}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.referenceCheckReport.designationOfReference">Designation Of Reference</span></dt>
+                <dd>
+                    <span>{{referenceCheckReport.designationOfReference}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.referenceCheckReport.referenceResponse">Reference Response</span></dt>
+                <dd>
+                    <span>{{referenceCheckReport.referenceResponse}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.referenceCheckReport.resVerifiedDate">Res Verified Date</span></dt>
+                <dd>
+                    <span>{{referenceCheckReport.resVerifiedDate}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/reference-check-report', referenceCheckReport.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

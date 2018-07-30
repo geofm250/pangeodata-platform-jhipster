@@ -1,0 +1,66 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="pangeodataJHipsterApp.generalInformation.home.title">General Informations</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-general-information" [routerLink]="['/general-information/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="pangeodataJHipsterApp.generalInformation.home.createLabel">
+            Create new General Information
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="generalInformations">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.generalInformation.firstName">First Name</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.generalInformation.middleName">Middle Name</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.generalInformation.lastName">Last Name</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.generalInformation.maidenName">Maiden Name</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.generalInformation.title">Title</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.generalInformation.birthDate">Birth Date</span></th>
+            <th><span jhiTranslate="pangeodataJHipsterApp.generalInformation.referenceId">Reference Id</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let generalInformation of generalInformations ;trackBy: trackId">
+                <td><a [routerLink]="['/general-information', generalInformation.id, 'view' ]">{{generalInformation.id}}</a></td>
+                <td>{{generalInformation.firstName}}</td>
+                <td>{{generalInformation.middleName}}</td>
+                <td>{{generalInformation.lastName}}</td>
+                <td>{{generalInformation.maidenName}}</td>
+                <td>{{generalInformation.title}}</td>
+                <td>{{generalInformation.birthDate}}</td>
+                <td>{{generalInformation.referenceId}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/general-information', generalInformation.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/general-information', generalInformation.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'general-information/'+ generalInformation.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

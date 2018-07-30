@@ -1,0 +1,27 @@
+{
+    "name": "OrderProfessionalLicenseForm",
+    "fields": [
+        {
+            "fieldName": "nameOfLicense",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "town",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "licenseInstitution",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180730145637",
+    "entityTableName": "order_professional_license_form",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="addressCheckReport">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.addressCheckReport.detail.title">Address Check Report</span> {{addressCheckReport.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.addressCheckReport.addressVerified">Address Verified</span></dt>
+                <dd>
+                    <span>{{addressCheckReport.addressVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.addressCheckReport.idAuthVerifiedBy">Id Auth Verified By</span></dt>
+                <dd>
+                    <span>{{addressCheckReport.idAuthVerifiedBy}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.addressCheckReport.addressVerifiedBy">Address Verified By</span></dt>
+                <dd>
+                    <span>{{addressCheckReport.addressVerifiedBy}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.addressCheckReport.addressVerifiedDate">Address Verified Date</span></dt>
+                <dd>
+                    <span>{{addressCheckReport.addressVerifiedDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.addressCheckReport.addressRemarks">Address Remarks</span></dt>
+                <dd>
+                    <span>{{addressCheckReport.addressRemarks}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/address-check-report', addressCheckReport.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

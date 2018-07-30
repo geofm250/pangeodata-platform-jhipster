@@ -1,0 +1,71 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="employmentReport">
+            <h2><span jhiTranslate="pangeodataJHipsterApp.employmentReport.detail.title">Employment Report</span> {{employmentReport.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pangeodataJHipsterApp.employmentReport.employerVerified">Employer Verified</span></dt>
+                <dd>
+                    <span>{{employmentReport.employerVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentStartDateVerified">Employment Start Date Verified</span></dt>
+                <dd>
+                    <span>{{employmentReport.employmentStartDateVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentEndDateVerified">Employment End Date Verified</span></dt>
+                <dd>
+                    <span>{{employmentReport.employmentEndDateVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.employmentReport.titleVerified">Title Verified</span></dt>
+                <dd>
+                    <span>{{employmentReport.titleVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.employmentReport.slaryVerified">Slary Verified</span></dt>
+                <dd>
+                    <span>{{employmentReport.slaryVerified}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.employmentReport.reasonForTermination">Reason For Termination</span></dt>
+                <dd>
+                    <span>{{employmentReport.reasonForTermination}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentPersonContactName">Employment Person Contact Name</span></dt>
+                <dd>
+                    <span>{{employmentReport.employmentPersonContactName}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentDesignationContact">Employment Designation Contact</span></dt>
+                <dd>
+                    <span>{{employmentReport.employmentDesignationContact}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentVerifiedDate">Employment Verified Date</span></dt>
+                <dd>
+                    <span>{{employmentReport.employmentVerifiedDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentRehireEligibility">Employment Rehire Eligibility</span></dt>
+                <dd>
+                    <span>{{employmentReport.employmentRehireEligibility}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentRehireExplanation">Employment Rehire Explanation</span></dt>
+                <dd>
+                    <span>{{employmentReport.employmentRehireExplanation}}</span>
+                </dd>
+                <dt><span jhiTranslate="pangeodataJHipsterApp.employmentReport.employmentRemarks">Employment Remarks</span></dt>
+                <dd>
+                    <span>{{employmentReport.employmentRemarks}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/employment-report', employmentReport.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

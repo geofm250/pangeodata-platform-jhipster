@@ -1,0 +1,27 @@
+{
+    "name": "LocalLanguageMediaCheckReport",
+    "fields": [
+        {
+            "fieldName": "localLanguageMediaFindings",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "localLanguageMediaStatus",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "localLanguageMediaVerifiedDate",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180730145650",
+    "entityTableName": "local_language_media_check_report",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
