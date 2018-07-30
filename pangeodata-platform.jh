@@ -2,7 +2,7 @@
 entity Transaction {
     id String,
 
-    general_information String,
+    generalnformation String,
 
     addesses String,
 
